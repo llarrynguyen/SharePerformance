@@ -16,3 +16,22 @@ class SPSearchViewController: UIViewController {
     }
 
 }
+
+extension SPSearchViewController: ViewControllerable {
+    var name: String {
+        return ViewControllerType.searchViewController
+    }
+    
+    var tabItemImageString: String {
+        return Resources.ImageNames.search
+    }
+    
+    var viewModel: Any? {
+        return SPSearchViewModel()
+       
+    }
+    
+    func setupViewController() {
+        //
+    }
+}

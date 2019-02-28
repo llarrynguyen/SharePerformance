@@ -17,3 +17,23 @@ class SPSectorViewController: UIViewController {
     }
 
 }
+
+extension SPSectorViewController: ViewControllerable {
+    var name: String {
+        return ViewControllerType.sectorViewController
+    }
+    
+    var tabItemImageString: String {
+        return Resources.ImageNames.sector
+    }
+    
+    var viewModel: Any? {
+        return SPSectorViewModel()
+        
+    }
+    
+    func setupViewController() {
+        //
+    }
+}
+

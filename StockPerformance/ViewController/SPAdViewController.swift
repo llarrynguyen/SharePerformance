@@ -28,3 +28,25 @@ class SPAdViewController: UIViewController {
     */
 
 }
+
+extension SPAdViewController: ViewControllerable {
+    var name: String {
+        return ViewControllerType.adViewController
+    }
+    
+    var tabItemImageString: String {
+        return Resources.ImageNames.ad
+    }
+    
+    var viewModel: Any? {
+        return SPAdViewModel()
+        
+    }
+    
+    func setupViewController() {
+        //
+    }
+    
+}
+
+

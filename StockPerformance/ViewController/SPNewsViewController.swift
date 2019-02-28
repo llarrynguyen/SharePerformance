@@ -28,3 +28,22 @@ class SPNewsViewController: UIViewController {
     */
 
 }
+
+extension SPNewsViewController: ViewControllerable {
+    var name: String {
+        return ViewControllerType.newsViewController
+    }
+    
+    var tabItemImageString: String {
+        return Resources.ImageNames.news
+    }
+    
+    var viewModel: Any? {
+        return SPNewsViewModel()
+        
+    }
+    
+    func setupViewController() {
+        //
+    }
+}

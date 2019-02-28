@@ -12,4 +12,10 @@ extension String {
     public var color: UIColor {
         return UIColor(hexString: self)
     }
+    
+    public var image: UIImage? {
+        return UIImage(named: self)
+    }
 }
+
+

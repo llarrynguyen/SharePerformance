@@ -24,6 +24,34 @@
 		D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424192226C6F900201729 /* String+Extensions.swift */; };
 		D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4241B22270C2600201729 /* Int +Extensions.swift */; };
 		D1E4241F222716D800201729 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4241E222716D800201729 /* AppColor.swift */; };
+		D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242222278CA600201729 /* SPSearchViewModel.swift */; };
+		D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242422278CB300201729 /* SPSectorViewModel.swift */; };
+		D1E4242722278CC800201729 /* SPNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242622278CC800201729 /* SPNewsViewModel.swift */; };
+		D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242822278CD300201729 /* SPAdViewModel.swift */; };
+		D1E4242B22278CDE00201729 /* SPYouViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242A22278CDE00201729 /* SPYouViewModel.swift */; };
+		D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242C2227B44500201729 /* ViewControllerFactory.swift */; };
+		D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242E2227B60100201729 /* UIImage+Extensions.swift */; };
+		D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424302227BC9500201729 /* NSAttributedString+Extensions.swift */; };
+		D1E424332227BCC300201729 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424322227BCC300201729 /* URL+Extensions.swift */; };
+		D1E424352227BD2D00201729 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424342227BD2D00201729 /* UserDefaults+Extension.swift */; };
+		D1E424372227BD7000201729 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424362227BD7000201729 /* Date+Extensions.swift */; };
+		D1E424392227BDB000201729 /* Dispatch+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424382227BDB000201729 /* Dispatch+Extensions.swift */; };
+		D1E4243B2227BE4E00201729 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4243A2227BE4E00201729 /* UIButton+Extensions.swift */; };
+		D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4243C2227BE8900201729 /* UIAlertController+Extensions.swift */; };
+		D1E4243F2227BEC800201729 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4243E2227BEC800201729 /* UICollectionView+Extensions.swift */; };
+		D1E424412227BF0600201729 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424402227BF0600201729 /* UIImageView+Extensions.swift */; };
+		D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424422227BF2D00201729 /* UILabel+Extensions.swift */; };
+		D1E424452227BF6900201729 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424442227BF6900201729 /* UISearchBar+Extensions.swift */; };
+		D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424462227BF8F00201729 /* UISegmentedControl+Extensions.swift */; };
+		D1E424492227BFB500201729 /* UIStoryBoard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424482227BFB500201729 /* UIStoryBoard+Extensions.swift */; };
+		D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4244A2227BFD900201729 /* UITableView+Extensions.swift */; };
+		D1E4244D2227BFF900201729 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4244C2227BFF900201729 /* UITextField+Extensions.swift */; };
+		D1E4244F2227C01900201729 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4244E2227C01900201729 /* UITextView+Extensions.swift */; };
+		D1E424512227C0E800201729 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424502227C0E800201729 /* UIViewController+Extensions.swift */; };
+		D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424522227C17300201729 /* UIView+Extensions.swift */; };
+		D1E424552227C1BB00201729 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424542227C1BB00201729 /* UIEdgeInsets+Extensions.swift */; };
+		D1E424572227C20300201729 /* UILayoutPriority+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424562227C20200201729 /* UILayoutPriority+Extensions.swift */; };
+		D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424582227C23A00201729 /* UIActivity+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +95,34 @@
 		D1E424192226C6F900201729 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		D1E4241B22270C2600201729 /* Int +Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int +Extensions.swift"; sourceTree = "<group>"; };
 		D1E4241E222716D800201729 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		D1E4242222278CA600201729 /* SPSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSearchViewModel.swift; sourceTree = "<group>"; };
+		D1E4242422278CB300201729 /* SPSectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSectorViewModel.swift; sourceTree = "<group>"; };
+		D1E4242622278CC800201729 /* SPNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNewsViewModel.swift; sourceTree = "<group>"; };
+		D1E4242822278CD300201729 /* SPAdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAdViewModel.swift; sourceTree = "<group>"; };
+		D1E4242A22278CDE00201729 /* SPYouViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPYouViewModel.swift; sourceTree = "<group>"; };
+		D1E4242C2227B44500201729 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		D1E4242E2227B60100201729 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424302227BC9500201729 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424322227BCC300201729 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424342227BD2D00201729 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		D1E424362227BD7000201729 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424382227BDB000201729 /* Dispatch+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dispatch+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4243A2227BE4E00201729 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4243C2227BE8900201729 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4243E2227BEC800201729 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424402227BF0600201729 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424422227BF2D00201729 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424442227BF6900201729 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424462227BF8F00201729 /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424482227BFB500201729 /* UIStoryBoard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4244A2227BFD900201729 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4244C2227BFF900201729 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4244E2227C01900201729 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424502227C0E800201729 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424522227C17300201729 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424542227C1BB00201729 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424562227C20200201729 /* UILayoutPriority+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424582227C23A00201729 /* UIActivity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivity+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +214,9 @@
 				D1E42411222695FC00201729 /* IntialViewController.swift */,
 				D1E424092226749200201729 /* SPSearchViewController.swift */,
 				D1E424072226748100201729 /* SPSectorViewController.swift */,
+				D1E424152226B00200201729 /* SPNewsViewController.swift */,
 				D1E4240B222674A800201729 /* SPYouViewController.swift */,
 				D1E4241322269BB100201729 /* SPAdViewController.swift */,
-				D1E424152226B00200201729 /* SPNewsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -168,6 +224,11 @@
 		D1E42402222673E800201729 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D1E4242222278CA600201729 /* SPSearchViewModel.swift */,
+				D1E4242422278CB300201729 /* SPSectorViewModel.swift */,
+				D1E4242622278CC800201729 /* SPNewsViewModel.swift */,
+				D1E4242822278CD300201729 /* SPAdViewModel.swift */,
+				D1E4242A22278CDE00201729 /* SPYouViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,9 +243,8 @@
 		D1E424052226742300201729 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D1E424172226C6DF00201729 /* UIColor+Extensions.swift */,
-				D1E424192226C6F900201729 /* String+Extensions.swift */,
-				D1E4241B22270C2600201729 /* Int +Extensions.swift */,
+				D1E4245B2227C28300201729 /* CoreGraphics */,
+				D1E4245A2227C26F00201729 /* UI */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,8 +275,48 @@
 			isa = PBXGroup;
 			children = (
 				D1E4241E222716D800201729 /* AppColor.swift */,
+				D1E4242C2227B44500201729 /* ViewControllerFactory.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D1E4245A2227C26F00201729 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D1E424172226C6DF00201729 /* UIColor+Extensions.swift */,
+				D1E424192226C6F900201729 /* String+Extensions.swift */,
+				D1E4241B22270C2600201729 /* Int +Extensions.swift */,
+				D1E4242E2227B60100201729 /* UIImage+Extensions.swift */,
+				D1E424302227BC9500201729 /* NSAttributedString+Extensions.swift */,
+				D1E424322227BCC300201729 /* URL+Extensions.swift */,
+				D1E424342227BD2D00201729 /* UserDefaults+Extension.swift */,
+				D1E424362227BD7000201729 /* Date+Extensions.swift */,
+				D1E424382227BDB000201729 /* Dispatch+Extensions.swift */,
+				D1E4243A2227BE4E00201729 /* UIButton+Extensions.swift */,
+				D1E4243C2227BE8900201729 /* UIAlertController+Extensions.swift */,
+				D1E4243E2227BEC800201729 /* UICollectionView+Extensions.swift */,
+				D1E424402227BF0600201729 /* UIImageView+Extensions.swift */,
+				D1E424422227BF2D00201729 /* UILabel+Extensions.swift */,
+				D1E424442227BF6900201729 /* UISearchBar+Extensions.swift */,
+				D1E424462227BF8F00201729 /* UISegmentedControl+Extensions.swift */,
+				D1E424482227BFB500201729 /* UIStoryBoard+Extensions.swift */,
+				D1E4244A2227BFD900201729 /* UITableView+Extensions.swift */,
+				D1E4244C2227BFF900201729 /* UITextField+Extensions.swift */,
+				D1E4244E2227C01900201729 /* UITextView+Extensions.swift */,
+				D1E424502227C0E800201729 /* UIViewController+Extensions.swift */,
+				D1E424522227C17300201729 /* UIView+Extensions.swift */,
+				D1E424542227C1BB00201729 /* UIEdgeInsets+Extensions.swift */,
+				D1E424562227C20200201729 /* UILayoutPriority+Extensions.swift */,
+				D1E424582227C23A00201729 /* UIActivity+Extensions.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D1E4245B2227C28300201729 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,17 +451,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E4241022268D7300201729 /* SPConstants.swift in Sources */,
+				D1E4244F2227C01900201729 /* UITextView+Extensions.swift in Sources */,
+				D1E424332227BCC300201729 /* URL+Extensions.swift in Sources */,
 				D1E423D42226739600201729 /* AppDelegate.swift in Sources */,
+				D1E424512227C0E800201729 /* UIViewController+Extensions.swift in Sources */,
+				D1E4244D2227BFF900201729 /* UITextField+Extensions.swift in Sources */,
+				D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */,
+				D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */,
+				D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */,
 				D1E424082226748100201729 /* SPSectorViewController.swift in Sources */,
+				D1E4242B22278CDE00201729 /* SPYouViewModel.swift in Sources */,
+				D1E424572227C20300201729 /* UILayoutPriority+Extensions.swift in Sources */,
+				D1E424392227BDB000201729 /* Dispatch+Extensions.swift in Sources */,
 				D1E42412222695FC00201729 /* IntialViewController.swift in Sources */,
+				D1E424452227BF6900201729 /* UISearchBar+Extensions.swift in Sources */,
+				D1E4242722278CC800201729 /* SPNewsViewModel.swift in Sources */,
 				D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */,
+				D1E424372227BD7000201729 /* Date+Extensions.swift in Sources */,
 				D1E4241F222716D800201729 /* AppColor.swift in Sources */,
+				D1E4243B2227BE4E00201729 /* UIButton+Extensions.swift in Sources */,
+				D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */,
 				D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */,
+				D1E424552227C1BB00201729 /* UIEdgeInsets+Extensions.swift in Sources */,
 				D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */,
 				D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */,
+				D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */,
+				D1E424352227BD2D00201729 /* UserDefaults+Extension.swift in Sources */,
+				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,
+				D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */,
+				D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */,
+				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
+				D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */,
 				D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */,
+				D1E424412227BF0600201729 /* UIImageView+Extensions.swift in Sources */,
+				D1E424492227BFB500201729 /* UIStoryBoard+Extensions.swift in Sources */,
 				D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */,
+				D1E4243F2227BEC800201729 /* UICollectionView+Extensions.swift in Sources */,
+				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
+				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

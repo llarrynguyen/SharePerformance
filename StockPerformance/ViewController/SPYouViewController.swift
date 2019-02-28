@@ -28,3 +28,24 @@ class SPYouViewController: UIViewController {
     */
 
 }
+
+extension SPYouViewController: ViewControllerable {
+    var name: String {
+        return ViewControllerType.youViewController
+    }
+    
+    var tabItemImageString: String {
+        return Resources.ImageNames.you
+    }
+    
+    var viewModel: Any? {
+        return SPYouViewModel()
+        
+    }
+    
+    func setupViewController() {
+        //
+    }
+    
+}
+
