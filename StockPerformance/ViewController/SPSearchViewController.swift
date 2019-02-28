@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SPSearchViewController.swift
 //  StockPerformance
 //
 //  Created by Larry Nguyen on 2/26/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SPSearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-
 }
-

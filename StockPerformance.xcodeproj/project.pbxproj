@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D1E423D42226739600201729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D32226739600201729 /* AppDelegate.swift */; };
-		D1E423D62226739600201729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D52226739600201729 /* ViewController.swift */; };
 		D1E423D92226739600201729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423D72226739600201729 /* Main.storyboard */; };
 		D1E423DB2226739800201729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DA2226739800201729 /* Assets.xcassets */; };
 		D1E423DE2226739800201729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DC2226739800201729 /* LaunchScreen.storyboard */; };
 		D1E423E92226739800201729 /* StockPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423E82226739800201729 /* StockPerformanceTests.swift */; };
 		D1E423F42226739800201729 /* StockPerformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423F32226739800201729 /* StockPerformanceUITests.swift */; };
+		D1E424082226748100201729 /* SPSectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424072226748100201729 /* SPSectorViewController.swift */; };
+		D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424092226749200201729 /* SPSearchViewController.swift */; };
+		D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4240B222674A800201729 /* SPYouViewController.swift */; };
+		D1E4241022268D7300201729 /* SPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4240F22268D7300201729 /* SPConstants.swift */; };
+		D1E42412222695FC00201729 /* IntialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42411222695FC00201729 /* IntialViewController.swift */; };
+		D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4241322269BB100201729 /* SPAdViewController.swift */; };
+		D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424152226B00200201729 /* SPNewsViewController.swift */; };
+		D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424172226C6DF00201729 /* UIColor+Extensions.swift */; };
+		D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424192226C6F900201729 /* String+Extensions.swift */; };
+		D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4241B22270C2600201729 /* Int +Extensions.swift */; };
+		D1E4241F222716D800201729 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4241E222716D800201729 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,6 @@
 /* Begin PBXFileReference section */
 		D1E423D02226739600201729 /* StockPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423D32226739600201729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1E423D52226739600201729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1E423D82226739600201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1E423DA2226739800201729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1E423DD2226739800201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,17 @@
 		D1E423EF2226739800201729 /* StockPerformanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockPerformanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423F32226739800201729 /* StockPerformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPerformanceUITests.swift; sourceTree = "<group>"; };
 		D1E423F52226739800201729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E424072226748100201729 /* SPSectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSectorViewController.swift; sourceTree = "<group>"; };
+		D1E424092226749200201729 /* SPSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSearchViewController.swift; sourceTree = "<group>"; };
+		D1E4240B222674A800201729 /* SPYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPYouViewController.swift; sourceTree = "<group>"; };
+		D1E4240F22268D7300201729 /* SPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPConstants.swift; sourceTree = "<group>"; };
+		D1E42411222695FC00201729 /* IntialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntialViewController.swift; sourceTree = "<group>"; };
+		D1E4241322269BB100201729 /* SPAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAdViewController.swift; sourceTree = "<group>"; };
+		D1E424152226B00200201729 /* SPNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNewsViewController.swift; sourceTree = "<group>"; };
+		D1E424172226C6DF00201729 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424192226C6F900201729 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D1E4241B22270C2600201729 /* Int +Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int +Extensions.swift"; sourceTree = "<group>"; };
+		D1E4241E222716D800201729 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +117,15 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				D1E4241D222716C700201729 /* Model */,
+				D1E4240E22268D5100201729 /* Globals */,
+				D1E4240D222674F600201729 /* NetworkService */,
+				D1E424062226743100201729 /* Utils */,
+				D1E424052226742300201729 /* Extensions */,
+				D1E42403222673EB00201729 /* View */,
+				D1E42402222673E800201729 /* ViewModel */,
+				D1E42401222673E400201729 /* ViewController */,
 				D1E423D32226739600201729 /* AppDelegate.swift */,
-				D1E423D52226739600201729 /* ViewController.swift */,
 				D1E423D72226739600201729 /* Main.storyboard */,
 				D1E423DA2226739800201729 /* Assets.xcassets */,
 				D1E423DC2226739800201729 /* LaunchScreen.storyboard */,
@@ -123,6 +150,73 @@
 				D1E423F52226739800201729 /* Info.plist */,
 			);
 			path = StockPerformanceUITests;
+			sourceTree = "<group>";
+		};
+		D1E42401222673E400201729 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D1E42411222695FC00201729 /* IntialViewController.swift */,
+				D1E424092226749200201729 /* SPSearchViewController.swift */,
+				D1E424072226748100201729 /* SPSectorViewController.swift */,
+				D1E4240B222674A800201729 /* SPYouViewController.swift */,
+				D1E4241322269BB100201729 /* SPAdViewController.swift */,
+				D1E424152226B00200201729 /* SPNewsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D1E42402222673E800201729 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D1E42403222673EB00201729 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1E424052226742300201729 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1E424172226C6DF00201729 /* UIColor+Extensions.swift */,
+				D1E424192226C6F900201729 /* String+Extensions.swift */,
+				D1E4241B22270C2600201729 /* Int +Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D1E424062226743100201729 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D1E4240D222674F600201729 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		D1E4240E22268D5100201729 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4240F22268D7300201729 /* SPConstants.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		D1E4241D222716C700201729 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4241E222716D800201729 /* AppColor.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E423D62226739600201729 /* ViewController.swift in Sources */,
+				D1E4241022268D7300201729 /* SPConstants.swift in Sources */,
 				D1E423D42226739600201729 /* AppDelegate.swift in Sources */,
+				D1E424082226748100201729 /* SPSectorViewController.swift in Sources */,
+				D1E42412222695FC00201729 /* IntialViewController.swift in Sources */,
+				D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */,
+				D1E4241F222716D800201729 /* AppColor.swift in Sources */,
+				D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */,
+				D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */,
+				D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */,
+				D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */,
+				D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */,
+				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
