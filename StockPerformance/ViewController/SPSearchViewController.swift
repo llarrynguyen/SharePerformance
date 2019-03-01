@@ -12,7 +12,7 @@ class SPSearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupViewController()
     }
 
 }
@@ -32,6 +32,6 @@ extension SPSearchViewController: ViewControllerable {
     }
     
     func setupViewController() {
-        //
+        self.view.backgroundColor = AppColor.mainBackgroud.value
     }
 }

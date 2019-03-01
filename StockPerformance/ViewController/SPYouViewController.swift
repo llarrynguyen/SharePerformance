@@ -12,8 +12,7 @@ class SPYouViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupViewController()
     }
     
 
@@ -44,7 +43,7 @@ extension SPYouViewController: ViewControllerable {
     }
     
     func setupViewController() {
-        //
+        self.view.backgroundColor = AppColor.mainBackgroud.value
     }
     
 }

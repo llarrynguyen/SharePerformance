@@ -52,6 +52,19 @@
 		D1E424552227C1BB00201729 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424542227C1BB00201729 /* UIEdgeInsets+Extensions.swift */; };
 		D1E424572227C20300201729 /* UILayoutPriority+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424562227C20200201729 /* UILayoutPriority+Extensions.swift */; };
 		D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424582227C23A00201729 /* UIActivity+Extensions.swift */; };
+		D1E424652227CFAC00201729 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424642227CFAC00201729 /* EndpointProtocol.swift */; };
+		D1E424672227D35200201729 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424662227D35200201729 /* HTTPMethod.swift */; };
+		D1E424692227D3C600201729 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424682227D3C600201729 /* HTTPTask.swift */; };
+		D1E4246B2227D87700201729 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4246A2227D87700201729 /* ParameterEncoding.swift */; };
+		D1E4246D2227D9F600201729 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4246C2227D9F600201729 /* URLParameterEncoder.swift */; };
+		D1E4246F2227F4CD00201729 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4246E2227F4CD00201729 /* JSONParameterEncoder.swift */; };
+		D1E424712228ABA800201729 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424702228ABA800201729 /* NetworkRouter.swift */; };
+		D1E424732228AEE800201729 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424722228AEE800201729 /* Router.swift */; };
+		D1E424752228D00900201729 /* SPAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424742228D00900201729 /* SPAPIClient.swift */; };
+		D1E42477222907D300201729 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42476222907D300201729 /* NetworkManager.swift */; };
+		D1E4247B2229DF9F00201729 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4247A2229DF9F00201729 /* StockModel.swift */; };
+		D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4247C2229DFA800201729 /* NewsModel.swift */; };
+		D1E4247F2229E23700201729 /* SectorPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4247E2229E23700201729 /* SectorPerformance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +136,19 @@
 		D1E424542227C1BB00201729 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		D1E424562227C20200201729 /* UILayoutPriority+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+Extensions.swift"; sourceTree = "<group>"; };
 		D1E424582227C23A00201729 /* UIActivity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivity+Extensions.swift"; sourceTree = "<group>"; };
+		D1E424642227CFAC00201729 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		D1E424662227D35200201729 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D1E424682227D3C600201729 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		D1E4246A2227D87700201729 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		D1E4246C2227D9F600201729 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		D1E4246E2227F4CD00201729 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		D1E424702228ABA800201729 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		D1E424722228AEE800201729 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D1E424742228D00900201729 /* SPAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAPIClient.swift; sourceTree = "<group>"; };
+		D1E42476222907D300201729 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D1E4247A2229DF9F00201729 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		D1E4247C2229DFA800201729 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		D1E4247E2229E23700201729 /* SectorPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorPerformance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +285,10 @@
 		D1E4240D222674F600201729 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				D1E424632227CEDA00201729 /* Encoding */,
+				D1E424622227CED100201729 /* Manager */,
+				D1E4245F2227CE9F00201729 /* Service */,
+				D1E4245E2227CE9000201729 /* EndPoint */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -276,6 +306,9 @@
 			children = (
 				D1E4241E222716D800201729 /* AppColor.swift */,
 				D1E4242C2227B44500201729 /* ViewControllerFactory.swift */,
+				D1E4247A2229DF9F00201729 /* StockModel.swift */,
+				D1E4247C2229DFA800201729 /* NewsModel.swift */,
+				D1E4247E2229E23700201729 /* SectorPerformance.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +350,44 @@
 			children = (
 			);
 			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		D1E4245E2227CE9000201729 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				D1E424742228D00900201729 /* SPAPIClient.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		D1E4245F2227CE9F00201729 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D1E424642227CFAC00201729 /* EndpointProtocol.swift */,
+				D1E424662227D35200201729 /* HTTPMethod.swift */,
+				D1E424682227D3C600201729 /* HTTPTask.swift */,
+				D1E424702228ABA800201729 /* NetworkRouter.swift */,
+				D1E424722228AEE800201729 /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D1E424622227CED100201729 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D1E42476222907D300201729 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D1E424632227CEDA00201729 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4246A2227D87700201729 /* ParameterEncoding.swift */,
+				D1E4246C2227D9F600201729 /* URLParameterEncoder.swift */,
+				D1E4246E2227F4CD00201729 /* JSONParameterEncoder.swift */,
+			);
+			path = Encoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +527,9 @@
 				D1E423D42226739600201729 /* AppDelegate.swift in Sources */,
 				D1E424512227C0E800201729 /* UIViewController+Extensions.swift in Sources */,
 				D1E4244D2227BFF900201729 /* UITextField+Extensions.swift in Sources */,
+				D1E424652227CFAC00201729 /* EndpointProtocol.swift in Sources */,
+				D1E4246F2227F4CD00201729 /* JSONParameterEncoder.swift in Sources */,
+				D1E4247B2229DF9F00201729 /* StockModel.swift in Sources */,
 				D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */,
 				D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */,
 				D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */,
@@ -467,26 +541,36 @@
 				D1E424452227BF6900201729 /* UISearchBar+Extensions.swift in Sources */,
 				D1E4242722278CC800201729 /* SPNewsViewModel.swift in Sources */,
 				D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */,
+				D1E424672227D35200201729 /* HTTPMethod.swift in Sources */,
 				D1E424372227BD7000201729 /* Date+Extensions.swift in Sources */,
 				D1E4241F222716D800201729 /* AppColor.swift in Sources */,
+				D1E42477222907D300201729 /* NetworkManager.swift in Sources */,
 				D1E4243B2227BE4E00201729 /* UIButton+Extensions.swift in Sources */,
 				D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */,
 				D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */,
 				D1E424552227C1BB00201729 /* UIEdgeInsets+Extensions.swift in Sources */,
 				D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */,
+				D1E4246D2227D9F600201729 /* URLParameterEncoder.swift in Sources */,
+				D1E4246B2227D87700201729 /* ParameterEncoding.swift in Sources */,
 				D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */,
 				D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */,
 				D1E424352227BD2D00201729 /* UserDefaults+Extension.swift in Sources */,
 				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,
 				D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */,
 				D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */,
+				D1E424752228D00900201729 /* SPAPIClient.swift in Sources */,
 				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
 				D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */,
+				D1E424732228AEE800201729 /* Router.swift in Sources */,
 				D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */,
 				D1E424412227BF0600201729 /* UIImageView+Extensions.swift in Sources */,
 				D1E424492227BFB500201729 /* UIStoryBoard+Extensions.swift in Sources */,
+				D1E424712228ABA800201729 /* NetworkRouter.swift in Sources */,
+				D1E4247F2229E23700201729 /* SectorPerformance.swift in Sources */,
 				D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */,
 				D1E4243F2227BEC800201729 /* UICollectionView+Extensions.swift in Sources */,
+				D1E424692227D3C600201729 /* HTTPTask.swift in Sources */,
+				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
 				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,

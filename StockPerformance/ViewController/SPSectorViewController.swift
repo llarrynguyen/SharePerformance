@@ -12,10 +12,8 @@ class SPSectorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        setupViewController()
     }
-
 }
 
 extension SPSectorViewController: ViewControllerable {
@@ -33,7 +31,7 @@ extension SPSectorViewController: ViewControllerable {
     }
     
     func setupViewController() {
-        //
+        self.view.backgroundColor = AppColor.mainBackgroud.value
     }
 }
 
