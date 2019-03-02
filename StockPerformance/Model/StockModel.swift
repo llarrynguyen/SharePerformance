@@ -21,6 +21,10 @@ struct Stock {
 }
 
 extension Stock: Decodable {
+    private enum StockRootCodingKey: String, CodingKey {
+        case globalQuote = "Global Quote"
+    }
+    
     private enum StockCodingKeys: String, CodingKey {
         case symbol           = "01. symbol"
         case open             = "02. open"
@@ -34,15 +38,21 @@ extension Stock: Decodable {
     }
     
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: StockCodingKeys.self)
-        symbol = try container.decode(String.self, forKey: .symbol)
-        open = try container.decode(String.self, forKey: .open)
-        close = try container.decode(String.self, forKey: .close)
-        high = try container.decode(String.self, forKey: .high)
-        low = try container.decode(String.self, forKey: .low)
-        price = try container.decode(String.self, forKey: .price)
-        volume = try container.decode(String.self, forKey: .volume)
-        change = try container.decode(String.self, forKey: .change)
-        changePercentage = try container.decode(String.self, forKey: .changePercentage)
+        do {
+            let rootContainer = try decoder.container(keyedBy: StockRootCodingKey.self)
+            let container = try rootContainer.nestedContainer(keyedBy: StockCodingKeys.self, forKey: StockRootCodingKey.globalQuote)
+            symbol = try container.decode(String.self, forKey: .symbol)
+            open = try container.decode(String.self, forKey: .open)
+            close = try container.decode(String.self, forKey: .close)
+            high = try container.decode(String.self, forKey: .high)
+            low = try container.decode(String.self, forKey: .low)
+            price = try container.decode(String.self, forKey: .price)
+            volume = try container.decode(String.self, forKey: .volume)
+            change = try container.decode(String.self, forKey: .change)
+            changePercentage = try container.decode(String.self, forKey: .changePercentage)
+        } catch {
+            throw AppError.decodeError
+        }
+
     }
 }

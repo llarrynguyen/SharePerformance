@@ -40,7 +40,7 @@ struct NetworkManager {
         }
     }
     
-    func getNews(source: String, completion: @escaping (_ newsArray: [News]?, _ error: String?) -> ()){
+    func getNews(source: String, completion: @escaping (_ newsResponse: NewsRootResponse?, _ error: String?) -> ()){
         router.request(.news(sources:source)){ data, response, error in
             if error != nil {
                 completion(nil,NetworkResponse.requestError.rawValue)
@@ -52,11 +52,12 @@ struct NetworkManager {
                 case .success:
                     guard let data = data else {
                         completion(nil,NetworkResponse.noData.rawValue)
+                        return
                     }
                     
                     do {
-                        let decodedResponse = try JSONDecoder().decode(News.self, from: data)
-                        completion(decodedResponse.News, Network)
+                        let decodedResponse = try JSONDecoder().decode(NewsRootResponse.self, from: data)
+                        completion(decodedResponse, nil)
                     } catch {
                         completion(nil, NetworkResponse.failedToDecode.rawValue )
                     }
@@ -66,4 +67,90 @@ struct NetworkManager {
             }
         }
     }
+    
+    func getQuote(symbol: String, completion: @escaping (_ newsArray: Stock?, _ error: String?) -> ()){
+        router.request(.symbolQuote(function: "GLOBAL_QUOTE", symbol: symbol)){ data, response, error in
+            if error != nil {
+                completion(nil,NetworkResponse.requestError.rawValue)
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let data = data else {
+                        completion(nil,NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    
+                    do {
+                        let decodedResponse = try JSONDecoder().decode(Stock.self, from: data)
+                        completion(decodedResponse, nil)
+                    } catch {
+                        completion(nil, NetworkResponse.failedToDecode.rawValue )
+                    }
+                case .failure(let networkError):
+                    completion(nil, networkError)
+                }
+            }
+        }
+    }
+    
+    func search(keywork: String, completion: @escaping (_ companySearch: CompanySearchResponse?, _ error: String?) -> ()){
+        router.request(.symbolQuote(function: "GLOBAL_QUOTE", symbol: keywork)){ data, response, error in
+            if error != nil {
+                completion(nil,NetworkResponse.requestError.rawValue)
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let data = data else {
+                        completion(nil,NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    
+                    do {
+                        let decodedResponse = try JSONDecoder().decode(CompanySearchResponse.self, from: data)
+                        completion(decodedResponse, nil)
+                    } catch {
+                        completion(nil, NetworkResponse.failedToDecode.rawValue )
+                    }
+                case .failure(let networkError):
+                    completion(nil, networkError)
+                }
+            }
+        }
+    }
+    
+    func getSectorPerformance(completion: @escaping (_ sectorPerformance: IndustryPerformance?, _ error: String?) -> ()){
+        router.request(.sector(function: "SECTOR")){ data, response, error in
+            if error != nil {
+                completion(nil,NetworkResponse.requestError.rawValue)
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                switch result {
+                case .success:
+                    guard let data = data else {
+                        completion(nil,NetworkResponse.noData.rawValue)
+                        return
+                    }
+                    
+                    do {
+                        let decodedResponse = try JSONDecoder().decode(IndustryPerformance.self, from: data)
+                        completion(decodedResponse, nil)
+                    } catch {
+                        completion(nil, NetworkResponse.failedToDecode.rawValue )
+                    }
+                case .failure(let networkError):
+                    completion(nil, networkError)
+                }
+            }
+        }
+    }
+    
+    
 }

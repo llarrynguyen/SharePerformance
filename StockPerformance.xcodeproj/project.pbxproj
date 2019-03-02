@@ -65,6 +65,9 @@
 		D1E4247B2229DF9F00201729 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4247A2229DF9F00201729 /* StockModel.swift */; };
 		D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4247C2229DFA800201729 /* NewsModel.swift */; };
 		D1E4247F2229E23700201729 /* SectorPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4247E2229E23700201729 /* SectorPerformance.swift */; };
+		D1E42481222A1D5900201729 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42480222A1D5900201729 /* NetworkLogger.swift */; };
+		D1E42484222A20EF00201729 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42483222A20EF00201729 /* AppError.swift */; };
+		D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42485222A3C9300201729 /* CompanySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +152,9 @@
 		D1E4247A2229DF9F00201729 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		D1E4247C2229DFA800201729 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		D1E4247E2229E23700201729 /* SectorPerformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectorPerformance.swift; sourceTree = "<group>"; };
+		D1E42480222A1D5900201729 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		D1E42483222A20EF00201729 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		D1E42485222A3C9300201729 /* CompanySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +205,7 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				D1E42482222A20B900201729 /* ErrorHandler */,
 				D1E4241D222716C700201729 /* Model */,
 				D1E4240E22268D5100201729 /* Globals */,
 				D1E4240D222674F600201729 /* NetworkService */,
@@ -309,6 +316,7 @@
 				D1E4247A2229DF9F00201729 /* StockModel.swift */,
 				D1E4247C2229DFA800201729 /* NewsModel.swift */,
 				D1E4247E2229E23700201729 /* SectorPerformance.swift */,
+				D1E42485222A3C9300201729 /* CompanySearch.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,6 +376,7 @@
 				D1E424682227D3C600201729 /* HTTPTask.swift */,
 				D1E424702228ABA800201729 /* NetworkRouter.swift */,
 				D1E424722228AEE800201729 /* Router.swift */,
+				D1E42480222A1D5900201729 /* NetworkLogger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -388,6 +397,14 @@
 				D1E4246E2227F4CD00201729 /* JSONParameterEncoder.swift */,
 			);
 			path = Encoding;
+			sourceTree = "<group>";
+		};
+		D1E42482222A20B900201729 /* ErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D1E42483222A20EF00201729 /* AppError.swift */,
+			);
+			path = ErrorHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,6 +549,7 @@
 				D1E4247B2229DF9F00201729 /* StockModel.swift in Sources */,
 				D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */,
 				D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */,
+				D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */,
 				D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */,
 				D1E424082226748100201729 /* SPSectorViewController.swift in Sources */,
 				D1E4242B22278CDE00201729 /* SPYouViewModel.swift in Sources */,
@@ -563,6 +581,7 @@
 				D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */,
 				D1E424732228AEE800201729 /* Router.swift in Sources */,
 				D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */,
+				D1E42481222A1D5900201729 /* NetworkLogger.swift in Sources */,
 				D1E424412227BF0600201729 /* UIImageView+Extensions.swift in Sources */,
 				D1E424492227BFB500201729 /* UIStoryBoard+Extensions.swift in Sources */,
 				D1E424712228ABA800201729 /* NetworkRouter.swift in Sources */,
@@ -572,6 +591,7 @@
 				D1E424692227D3C600201729 /* HTTPTask.swift in Sources */,
 				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
+				D1E42484222A20EF00201729 /* AppError.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
 				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,
 			);

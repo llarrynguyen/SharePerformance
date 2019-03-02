@@ -8,23 +8,41 @@
 
 import Foundation
 
-struct News {
-    let title: String
-    let url: String
-    let date: String
-}
 
-extension News: Decodable {
+struct NewsRootResponse {
+    
+    enum NewsRootCodingKey: String, CodingKey {
+        case articles
+    }
+    
     private enum NewsCodingKey: String, CodingKey {
         case title = "title"
         case url = "url"
         case date = "publishedAt"
     }
     
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: NewsCodingKey.self)
-        title = try container.decode(String.self, forKey: .title)
-        url = try container.decode(String.self, forKey: .url)
-        date = try container.decode(String.self, forKey: .date)
+    var newsArray: [News]
+    
+    struct News {
+        let title: String
+        let url: String
+        let date: String
     }
 }
+extension NewsRootResponse: Decodable {
+    init(from decoder: Decoder) throws {
+        let rootContainer = try decoder.container(keyedBy: NewsRootCodingKey.self)
+        var container = try rootContainer.nestedUnkeyedContainer(forKey: .articles)
+        var array = [News]()
+        while !container.isAtEnd {
+            let newsArrayContainer = try container.nestedContainer(keyedBy: NewsCodingKey.self)
+            let title = try newsArrayContainer.decode(String.self, forKey:.title)
+            let url = try newsArrayContainer.decode(String.self, forKey:.url)
+            let date = try newsArrayContainer.decode(String.self, forKey:.date)
+            array.append(News(title: title, url: url, date: date))
+        }
+        self.newsArray = array
+    }
+}
+
+
