@@ -26,7 +26,7 @@ extension SPSectorViewController: ViewControllerable {
     }
     
     var viewModel: Any? {
-        return SPSectorViewModel()
+        return SPSectorViewModel(networkManager: NetworkManager())
         
     }
     

@@ -27,7 +27,7 @@ extension SPNewsViewController: ViewControllerable {
     }
     
     var viewModel: Any? {
-        return SPNewsViewModel()
+        return SPNewsViewModel(networkManager: NetworkManager())
         
     }
     

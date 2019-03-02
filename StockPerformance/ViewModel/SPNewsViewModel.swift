@@ -8,8 +8,19 @@
 
 import Foundation
 
+protocol SPNewsViewModelProtocol: class {
+   func didLoadTopNews()
+}
+
 class SPNewsViewModel {
-    init() {
-        
+    var networkManager: NetworkManager!
+    var newsArray: [News] = []
+    weak var delete: SPNewsViewModelProtocol?
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
+    }
+    
+    func numberOfNewsItems() -> Int {
+        return newsArray.count
     }
 }

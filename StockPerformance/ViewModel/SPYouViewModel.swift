@@ -8,8 +8,18 @@
 
 import Foundation
 
+protocol SPYouViewModelProtocol: class {
+    func didLoadYou()
+}
+
 class SPYouViewModel {
-    init() {
-        
+    var networkManager: NetworkManager!
+    
+    weak var delegate: SPYouViewModelProtocol?
+    
+    
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
     }
+    
 }

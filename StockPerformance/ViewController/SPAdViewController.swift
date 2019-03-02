@@ -28,7 +28,7 @@ extension SPAdViewController: ViewControllerable {
     }
     
     var viewModel: Any? {
-        return SPAdViewModel()
+        return SPAdViewModel(networkManager: NetworkManager())
         
     }
     

@@ -27,8 +27,7 @@ extension SPSearchViewController: ViewControllerable {
     }
     
     var viewModel: Any? {
-        return SPSearchViewModel()
-       
+        return SPSearchViewModel(networkManager: NetworkManager())
     }
     
     func setupViewController() {

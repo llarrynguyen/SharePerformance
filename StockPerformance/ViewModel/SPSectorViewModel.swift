@@ -8,8 +8,25 @@
 
 import Foundation
 
+protocol SPSectorViewModelProtocol: class {
+    func didFinishLoadingSectorInfo()
+}
+
 class SPSectorViewModel {
-    init() {
-        
+    var networkManager: NetworkManager!
+    var industryPerformance: IndustryPerformance?
+    weak var delegate: SPSectorViewModelProtocol?
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
     }
+    
+    func loadIndustryPerformanceInfo(){
+        self.networkManager.getSectorPerformance { [weak self](industryPerformance, errorMessage) in
+            if errorMessage == nil {
+                self?.industryPerformance = industryPerformance
+                self?.delegate?.didFinishLoadingSectorInfo()
+            }
+        }
+    }
+    
 }

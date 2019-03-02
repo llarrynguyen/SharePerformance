@@ -61,7 +61,7 @@ extension SPAPIClient: EndpointProtocol {
     var task: HTTPTask {
         switch self {
         case .news(let sources):
-            return .requestWithParameters(bodyParameters: nil, urlParameters: ["sources": sources, "apiKey": NetworkManager.apiKey])
+            return .requestWithParameters(bodyParameters: nil, urlParameters: ["sources": sources, "apiKey": NetworkManager.newsApiKey])
         case .realTimeStock(let function, let symbol, let timeInterval):
             return .requestWithParameters(bodyParameters: nil, urlParameters: ["function": function, "symbol": symbol, "interval": timeInterval, "apiKey": NetworkManager.apiKey])
         case .companySearch(let function, let keyword):

@@ -38,7 +38,7 @@ extension SPYouViewController: ViewControllerable {
     }
     
     var viewModel: Any? {
-        return SPYouViewModel()
+        return SPYouViewModel(networkManager: NetworkManager())
         
     }
     

@@ -8,8 +8,16 @@
 
 import Foundation
 
+protocol SPAdViewModelProtocol: class {
+    func didLoadAddInfo()
+}
+
 class SPAdViewModel {
-    init() {
-        
+    var networkManager: NetworkManager!
+    weak var delegate: SPAdViewModelProtocol?
+    
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
     }
+    
 }

@@ -8,6 +8,11 @@
 
 import Foundation
 
+struct News {
+    let title: String
+    let url: String
+    let date: String
+}
 
 struct NewsRootResponse {
     
@@ -22,13 +27,8 @@ struct NewsRootResponse {
     }
     
     var newsArray: [News]
-    
-    struct News {
-        let title: String
-        let url: String
-        let date: String
-    }
 }
+
 extension NewsRootResponse: Decodable {
     init(from decoder: Decoder) throws {
         let rootContainer = try decoder.container(keyedBy: NewsRootCodingKey.self)

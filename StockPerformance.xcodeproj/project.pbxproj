@@ -68,6 +68,7 @@
 		D1E42481222A1D5900201729 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42480222A1D5900201729 /* NetworkLogger.swift */; };
 		D1E42484222A20EF00201729 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42483222A20EF00201729 /* AppError.swift */; };
 		D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42485222A3C9300201729 /* CompanySearch.swift */; };
+		D1E42489222A6A2200201729 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42488222A6A2200201729 /* ViewModelable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		D1E42480222A1D5900201729 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		D1E42483222A20EF00201729 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		D1E42485222A3C9300201729 /* CompanySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySearch.swift; sourceTree = "<group>"; };
+		D1E42488222A6A2200201729 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				D1E42487222A6A0200201729 /* Protocols */,
 				D1E42482222A20B900201729 /* ErrorHandler */,
 				D1E4241D222716C700201729 /* Model */,
 				D1E4240E22268D5100201729 /* Globals */,
@@ -407,6 +410,14 @@
 			path = ErrorHandler;
 			sourceTree = "<group>";
 		};
+		D1E42487222A6A0200201729 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D1E42488222A6A2200201729 /* ViewModelable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,6 +573,7 @@
 				D1E424672227D35200201729 /* HTTPMethod.swift in Sources */,
 				D1E424372227BD7000201729 /* Date+Extensions.swift in Sources */,
 				D1E4241F222716D800201729 /* AppColor.swift in Sources */,
+				D1E42489222A6A2200201729 /* ViewModelable.swift in Sources */,
 				D1E42477222907D300201729 /* NetworkManager.swift in Sources */,
 				D1E4243B2227BE4E00201729 /* UIButton+Extensions.swift in Sources */,
 				D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */,

@@ -8,8 +8,30 @@
 
 import Foundation
 
+protocol SPSearchViewModelProtocol: class {
+    func haveSearchedForKeyword()
+}
 class SPSearchViewModel {
-    init() {
-        
+    var networkManager: NetworkManager!
+    
+    weak var delegate: SPSearchViewModelProtocol?
+    var searches: [CompanySearch]?
+    
+    
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
+    }
+    
+    func search(keywork: String){
+        networkManager.search(keywork: keywork) { [weak self] (searchResponse, errorMessage) in
+            if errorMessage == nil {
+                self?.searches = searchResponse?.companySearches
+                self?.delegate?.haveSearchedForKeyword()
+            }
+        }
+    }
+    
+    func numberOfSearchResults() -> Int {
+        return searches?.count ?? 0
     }
 }
