@@ -9,7 +9,22 @@
 import Foundation
 
 struct News {
-    let source: String
     let title: String
     let url: String
+    let date: String
+}
+
+extension News: Decodable {
+    private enum NewsCodingKey: String, CodingKey {
+        case title = "title"
+        case url = "url"
+        case date = "publishedAt"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: NewsCodingKey.self)
+        title = try container.decode(String.self, forKey: .title)
+        url = try container.decode(String.self, forKey: .url)
+        date = try container.decode(String.self, forKey: .date)
+    }
 }
