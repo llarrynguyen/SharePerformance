@@ -69,6 +69,21 @@
 		D1E42484222A20EF00201729 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42483222A20EF00201729 /* AppError.swift */; };
 		D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42485222A3C9300201729 /* CompanySearch.swift */; };
 		D1E42489222A6A2200201729 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42488222A6A2200201729 /* ViewModelable.swift */; };
+		D1E4248B222A7A5800201729 /* SPGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4248A222A7A5800201729 /* SPGlobals.swift */; };
+		D1E4248F222BD84500201729 /* CollectionViewCellCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4248E222BD84500201729 /* CollectionViewCellCommand.swift */; };
+		D1E42492222BE49E00201729 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */; };
+		D1E42494222BE57800201729 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42493222BE57800201729 /* SearchView.swift */; };
+		D1E42496222BE81600201729 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42495222BE81600201729 /* LayoutManager.swift */; };
+		D1E42498222BE99400201729 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42497222BE99400201729 /* BaseView.swift */; };
+		D1E424B5222BECDE00201729 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E4249A222BECD700201729 /* SF-Pro-Display-Light.otf */; };
+		D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E4249B222BECD700201729 /* SF-Pro-Text-Bold.otf */; };
+		D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E4249E222BECD800201729 /* SF-Pro-Display-Regular.otf */; };
+		D1E424BB222BECDE00201729 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424A0222BECD900201729 /* SF-Pro-Text-Regular.otf */; };
+		D1E424C0222BECDE00201729 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424A5222BECDC00201729 /* SF-Pro-Display-Heavy.otf */; };
+		D1E424C1222BECDE00201729 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424A6222BECDC00201729 /* SF-Pro-Text-Medium.otf */; };
+		D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */; };
+		D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */; };
+		D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +172,21 @@
 		D1E42483222A20EF00201729 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		D1E42485222A3C9300201729 /* CompanySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySearch.swift; sourceTree = "<group>"; };
 		D1E42488222A6A2200201729 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
+		D1E4248A222A7A5800201729 /* SPGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPGlobals.swift; sourceTree = "<group>"; };
+		D1E4248E222BD84500201729 /* CollectionViewCellCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellCommand.swift; sourceTree = "<group>"; };
+		D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1E42493222BE57800201729 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		D1E42495222BE81600201729 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
+		D1E42497222BE99400201729 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D1E4249A222BECD700201729 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		D1E4249B222BECD700201729 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		D1E4249E222BECD800201729 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		D1E424A0222BECD900201729 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		D1E424A5222BECDC00201729 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		D1E424A6222BECDC00201729 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,18 +237,21 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
-				D1E42487222A6A0200201729 /* Protocols */,
 				D1E42482222A20B900201729 /* ErrorHandler */,
-				D1E4241D222716C700201729 /* Model */,
-				D1E4240E22268D5100201729 /* Globals */,
-				D1E4240D222674F600201729 /* NetworkService */,
 				D1E424062226743100201729 /* Utils */,
 				D1E424052226742300201729 /* Extensions */,
+				D1E4240E22268D5100201729 /* Globals */,
+				D1E4240D222674F600201729 /* NetworkService */,
+				D1E4248D222BD79A00201729 /* Commands */,
+				D1E4248C222A808000201729 /* Factory */,
+				D1E42487222A6A0200201729 /* Protocols */,
+				D1E4241D222716C700201729 /* Model */,
 				D1E42403222673EB00201729 /* View */,
 				D1E42402222673E800201729 /* ViewModel */,
 				D1E42401222673E400201729 /* ViewController */,
 				D1E423D32226739600201729 /* AppDelegate.swift */,
 				D1E423D72226739600201729 /* Main.storyboard */,
+				D1E42499222BEC3300201729 /* Recources */,
 				D1E423DA2226739800201729 /* Assets.xcassets */,
 				D1E423DC2226739800201729 /* LaunchScreen.storyboard */,
 				D1E423DF2226739800201729 /* Info.plist */,
@@ -272,6 +305,9 @@
 		D1E42403222673EB00201729 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */,
+				D1E42493222BE57800201729 /* SearchView.swift */,
+				D1E42497222BE99400201729 /* BaseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +324,7 @@
 		D1E424062226743100201729 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D1E42495222BE81600201729 /* LayoutManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -307,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E4240F22268D7300201729 /* SPConstants.swift */,
+				D1E4248A222A7A5800201729 /* SPGlobals.swift */,
 			);
 			path = Globals;
 			sourceTree = "<group>";
@@ -315,7 +353,6 @@
 			isa = PBXGroup;
 			children = (
 				D1E4241E222716D800201729 /* AppColor.swift */,
-				D1E4242C2227B44500201729 /* ViewControllerFactory.swift */,
 				D1E4247A2229DF9F00201729 /* StockModel.swift */,
 				D1E4247C2229DFA800201729 /* NewsModel.swift */,
 				D1E4247E2229E23700201729 /* SectorPerformance.swift */,
@@ -416,6 +453,46 @@
 				D1E42488222A6A2200201729 /* ViewModelable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D1E4248C222A808000201729 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4242C2227B44500201729 /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		D1E4248D222BD79A00201729 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				D1E42490222BD8E200201729 /* CollectionViewCellCommand */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		D1E42490222BD8E200201729 /* CollectionViewCellCommand */ = {
+			isa = PBXGroup;
+			children = (
+				D1E4248E222BD84500201729 /* CollectionViewCellCommand.swift */,
+			);
+			path = CollectionViewCellCommand;
+			sourceTree = "<group>";
+		};
+		D1E42499222BEC3300201729 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				D1E424A5222BECDC00201729 /* SF-Pro-Display-Heavy.otf */,
+				D1E4249A222BECD700201729 /* SF-Pro-Display-Light.otf */,
+				D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */,
+				D1E4249E222BECD800201729 /* SF-Pro-Display-Regular.otf */,
+				D1E4249B222BECD700201729 /* SF-Pro-Text-Bold.otf */,
+				D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */,
+				D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */,
+				D1E424A6222BECDC00201729 /* SF-Pro-Text-Medium.otf */,
+				D1E424A0222BECD900201729 /* SF-Pro-Text-Regular.otf */,
+			);
+			path = Recources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,8 +599,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */,
 				D1E423DE2226739800201729 /* LaunchScreen.storyboard in Resources */,
+				D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */,
+				D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */,
+				D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */,
+				D1E424C1222BECDE00201729 /* SF-Pro-Text-Medium.otf in Resources */,
+				D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */,
+				D1E424BB222BECDE00201729 /* SF-Pro-Text-Regular.otf in Resources */,
 				D1E423DB2226739800201729 /* Assets.xcassets in Resources */,
+				D1E424C0222BECDE00201729 /* SF-Pro-Display-Heavy.otf in Resources */,
+				D1E424B5222BECDE00201729 /* SF-Pro-Display-Light.otf in Resources */,
 				D1E423D92226739600201729 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,13 +644,16 @@
 				D1E424652227CFAC00201729 /* EndpointProtocol.swift in Sources */,
 				D1E4246F2227F4CD00201729 /* JSONParameterEncoder.swift in Sources */,
 				D1E4247B2229DF9F00201729 /* StockModel.swift in Sources */,
+				D1E42496222BE81600201729 /* LayoutManager.swift in Sources */,
 				D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */,
 				D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */,
 				D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */,
 				D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */,
 				D1E424082226748100201729 /* SPSectorViewController.swift in Sources */,
+				D1E42492222BE49E00201729 /* SearchCollectionViewCell.swift in Sources */,
 				D1E4242B22278CDE00201729 /* SPYouViewModel.swift in Sources */,
 				D1E424572227C20300201729 /* UILayoutPriority+Extensions.swift in Sources */,
+				D1E42494222BE57800201729 /* SearchView.swift in Sources */,
 				D1E424392227BDB000201729 /* Dispatch+Extensions.swift in Sources */,
 				D1E42412222695FC00201729 /* IntialViewController.swift in Sources */,
 				D1E424452227BF6900201729 /* UISearchBar+Extensions.swift in Sources */,
@@ -584,9 +673,11 @@
 				D1E4246B2227D87700201729 /* ParameterEncoding.swift in Sources */,
 				D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */,
 				D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */,
+				D1E4248B222A7A5800201729 /* SPGlobals.swift in Sources */,
 				D1E424352227BD2D00201729 /* UserDefaults+Extension.swift in Sources */,
 				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,
 				D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */,
+				D1E4248F222BD84500201729 /* CollectionViewCellCommand.swift in Sources */,
 				D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */,
 				D1E424752228D00900201729 /* SPAPIClient.swift in Sources */,
 				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
@@ -604,6 +695,7 @@
 				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
 				D1E42484222A20EF00201729 /* AppError.swift in Sources */,
+				D1E42498222BE99400201729 /* BaseView.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
 				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,
 			);
