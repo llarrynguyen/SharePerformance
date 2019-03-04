@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 @IBDesignable open class SearchView: BaseView {
     
     @IBInspectable public var title: String = "" {
@@ -131,7 +129,7 @@ import UIKit
         super.draw(rect)
         
         titleLabel.text = title
-        titleLabel.font = UIFont(name: subtitleFont, size: subtitleSize)
+        titleLabel.font = UIFont(name: titleFont, size: titleSize)
         titleLabel.shadowColor = UIColor.black
         titleLabel.shadowOffset = CGSize.zero
         titleLabel.textAlignment = .left
@@ -152,7 +150,7 @@ import UIKit
         signalImageView.image = signalImage
         
         timeLabel.text = timeString
-        timeLabel.font = UIFont(name: subtitleFont, size: subtitleSize)
+        timeLabel.font = UIFont(name: titleFont, size: titleSize)
         timeLabel.textColor = UIColor.white
         timeLabel.shadowOffset = CGSize.zero
         timeLabel.textAlignment = .left

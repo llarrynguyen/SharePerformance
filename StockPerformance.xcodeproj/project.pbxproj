@@ -84,6 +84,7 @@
 		D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */; };
 		D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */; };
 		D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */; };
+		D1E424D1222C0BDD00201729 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424D0222C0BDD00201729 /* SimpleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +188,7 @@
 		D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		D1E424D0222C0BDD00201729 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 				D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */,
 				D1E42493222BE57800201729 /* SearchView.swift */,
 				D1E42497222BE99400201729 /* BaseView.swift */,
+				D1E424D0222C0BDD00201729 /* SimpleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -683,6 +686,7 @@
 				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
 				D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */,
 				D1E424732228AEE800201729 /* Router.swift in Sources */,
+				D1E424D1222C0BDD00201729 /* SimpleView.swift in Sources */,
 				D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */,
 				D1E42481222A1D5900201729 /* NetworkLogger.swift in Sources */,
 				D1E424412227BF0600201729 /* UIImageView+Extensions.swift in Sources */,

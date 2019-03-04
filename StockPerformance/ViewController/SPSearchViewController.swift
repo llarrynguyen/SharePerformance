@@ -13,7 +13,7 @@ class SPSearchViewController: UIViewController {
     
     weak var collectionView: UICollectionView!
     weak var searchBar: UISearchBar!
-    
+    private var searchViewModel: SPSearchViewModel?
     
     override func loadView() {
         super.loadView()
@@ -25,14 +25,16 @@ class SPSearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let viewModel = viewModel as? SPSearchViewModel {
+            searchViewModel = viewModel
             viewModel.delegate = self
-            
         }
         
         self.searchBar.delegate = self
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.backgroundColor = .clear
+        self.collectionView.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: Resources.reusableIdentifiers.searchCell)
+        self.collectionView.register(SimpleView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.simpleView)
     }
     
     fileprivate func setupSearchUI(){
@@ -46,7 +48,7 @@ class SPSearchViewController: UIViewController {
             ])
         
         self.searchBar = searchBar
-        self.searchBar.placeholder = "e.g: AAPL"
+        self.searchBar.placeholder = ConstantTexts.PlaceHolder.searchPlaceholder
         
     }
     
@@ -114,7 +116,7 @@ extension SPSearchViewController: UISearchBarDelegate {
 
 extension SPSearchViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return searchViewModel?.searches?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -125,6 +127,39 @@ extension SPSearchViewController: UICollectionViewDataSource {
 }
 
 extension SPSearchViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard kind == UICollectionView.elementKindSectionHeader else {
+            return UICollectionReusableView()
+        }
+        if let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Resources.reusableIdentifiers.simpleView, for: indexPath) as? SimpleView {
+            view.backgroundColor = UIColor.white
+            return view
+        }
+         return UICollectionReusableView()
+    }
     
+    
+}
+
+extension SPSearchViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.size.width, height: 300)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return Resources.Sizes.halfInset
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: Resources.Sizes.halfInset, left: Resources.Sizes.halfInset, bottom: Resources.Sizes.halfInset, right: Resources.Sizes.halfInset)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: self.view.frame.width, height: 60)
+    }
 }
 

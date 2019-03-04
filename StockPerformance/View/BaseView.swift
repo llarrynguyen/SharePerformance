@@ -83,7 +83,6 @@ import UIKit
         originalFrame = rect
         
         self.layer.shadowOpacity = shadowOpacity
-        self.layer.shadowColor = shadowColor.cgColor
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowRadius = shadowBlur
         self.layer.cornerRadius = viewRadius

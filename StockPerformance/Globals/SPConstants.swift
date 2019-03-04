@@ -6,7 +6,7 @@
 //  Copyright © 2019 Larry. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct SPConstants {
     struct ColorPaletteHex {
@@ -29,6 +29,22 @@ struct Resources {
         static let news = "icons8-pc_on_desk"
         static let you = "icons8-likes_folder"
         static let ad = "icons8-mortgage"
+    }
+    struct reusableIdentifiers {
+        static let searchCell = "searchCell"
+        static let simpleView = "simpleView"
+    }
+    
+    struct Sizes {
+        static let standardInset: CGFloat = 16
+        static let halfInset: CGFloat = 8
+        static let doubleInset: CGFloat = 32
+    }
+}
+
+struct ConstantTexts {
+    struct PlaceHolder {
+        static let searchPlaceholder = "Stock symbol eg. AAPL"
     }
 }
 
