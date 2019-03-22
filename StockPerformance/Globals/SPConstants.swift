@@ -33,6 +33,7 @@ struct Resources {
     struct reusableIdentifiers {
         static let searchCell = "searchCell"
         static let simpleView = "simpleView"
+        static let portfolioCell = "portfolioCell"
     }
     
     struct Sizes {

@@ -1,0 +1,6 @@
+framework module Pods_StockPerformanceTests {
+  umbrella header "Pods-StockPerformanceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

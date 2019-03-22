@@ -9,18 +9,31 @@
 import UIKit
 
 class SPSearchViewController: UIViewController {
-    
-    
     weak var collectionView: UICollectionView!
+    weak var portfoliaCollectionView: UICollectionView!
     weak var searchBar: UISearchBar!
     private var searchViewModel: SPSearchViewModel?
     
     override func loadView() {
         super.loadView()
-        setupCollectionView()
         setupSearchUI()
+        setupTopCollectionView()
+        setupCollectionView()
         setupViewController()
     }
+    
+    lazy var collectionViewFlowLayout : AdaptableCollectionViewLayout = {
+        let layout = AdaptableCollectionViewLayout(display: .grid)
+        return layout
+    }()
+    
+    lazy var portfoliaCollectionViewFlowLayout : AdaptableCollectionViewLayout = {
+        let layout = AdaptableCollectionViewLayout(display: .inline)
+        return layout
+    }()
+    
+    let dataSource = ColorDataSource()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +42,31 @@ class SPSearchViewController: UIViewController {
             viewModel.delegate = self
         }
         
+        
         self.searchBar.delegate = self
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.backgroundColor = .clear
+        self.collectionView.collectionViewLayout = collectionViewFlowLayout
         self.collectionView.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: Resources.reusableIdentifiers.searchCell)
+        
+        self.portfoliaCollectionView.delegate = self
+        self.portfoliaCollectionView.dataSource = self
+        self.portfoliaCollectionView.backgroundColor = .black
+        self.portfoliaCollectionView.isScrollEnabled = true
+        self.collectionView.collectionViewLayout = portfoliaCollectionViewFlowLayout
+       
+        self.portfoliaCollectionView.register(PortfoliaCollectionViewCell.self, forCellWithReuseIdentifier: Resources.reusableIdentifiers.portfolioCell)
+        
+        self.dataSource.data.addAndNotify(observer: self) { [weak self] in
+            mainQueue {
+                self?.collectionView.reloadData()
+                self?.portfoliaCollectionView.reloadData()
+            }
+        }
+        
+        // get data
+        self.dataSource.data.value = [.red, .orange, .cyan, .purple, .yellow, .magenta]
         //self.collectionView.register(SimpleView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.simpleView)
     }
     
@@ -57,10 +90,25 @@ class SPSearchViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(collectionView)
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            collectionView.topAnchor.constraint(equalTo: self.portfoliaCollectionView.topAnchor),
             collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            ])
+        
+        self.collectionView = collectionView
+    }
+    
+    
+    fileprivate func setupTopCollectionView(){
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(collectionView)
+        NSLayoutConstraint.activate([
+            self.portfoliaCollectionView.topAnchor.constraint(equalTo: self.searchBar.topAnchor),
+            self.portfoliaCollectionView.bottomAnchor.constraint(equalTo: self.collectionView.bottomAnchor),
+            self.portfoliaCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            self.portfoliaCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
             ])
         
         self.collectionView = collectionView
