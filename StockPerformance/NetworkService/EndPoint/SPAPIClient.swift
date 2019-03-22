@@ -77,6 +77,4 @@ extension SPAPIClient: EndpointProtocol {
     var headers: HTTPHeaders? {
         return nil
     }
-    
-    
 }

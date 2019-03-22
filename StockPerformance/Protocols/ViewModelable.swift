@@ -12,3 +12,11 @@ protocol ViewModelable {
     var delegate: Any {get}
     var networkManager: NetworkManager {get}
 }
+
+
+protocol ViewControllerable {
+    var name: String {get}
+    var tabItemImageString: String {get}
+    var viewModel: Any? {get}
+    func setupViewController()
+}

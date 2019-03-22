@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D134EA802245063D00D82DAD /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134EA7F2245063D00D82DAD /* StockView.swift */; };
+		D134EA822245064B00D82DAD /* StockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D134EA812245064B00D82DAD /* StockView.xib */; };
 		D1E423D42226739600201729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D32226739600201729 /* AppDelegate.swift */; };
 		D1E423D92226739600201729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423D72226739600201729 /* Main.storyboard */; };
 		D1E423DB2226739800201729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DA2226739800201729 /* Assets.xcassets */; };
@@ -17,8 +19,6 @@
 		D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424092226749200201729 /* SPSearchViewController.swift */; };
 		D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4240B222674A800201729 /* SPYouViewController.swift */; };
 		D1E4241022268D7300201729 /* SPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4240F22268D7300201729 /* SPConstants.swift */; };
-		D1E42412222695FC00201729 /* IntialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42411222695FC00201729 /* IntialViewController.swift */; };
-		D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4241322269BB100201729 /* SPAdViewController.swift */; };
 		D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424152226B00200201729 /* SPNewsViewController.swift */; };
 		D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424172226C6DF00201729 /* UIColor+Extensions.swift */; };
 		D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424192226C6F900201729 /* String+Extensions.swift */; };
@@ -27,9 +27,7 @@
 		D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242222278CA600201729 /* SPSearchViewModel.swift */; };
 		D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242422278CB300201729 /* SPSectorViewModel.swift */; };
 		D1E4242722278CC800201729 /* SPNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242622278CC800201729 /* SPNewsViewModel.swift */; };
-		D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242822278CD300201729 /* SPAdViewModel.swift */; };
 		D1E4242B22278CDE00201729 /* SPYouViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242A22278CDE00201729 /* SPYouViewModel.swift */; };
-		D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242C2227B44500201729 /* ViewControllerFactory.swift */; };
 		D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4242E2227B60100201729 /* UIImage+Extensions.swift */; };
 		D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424302227BC9500201729 /* NSAttributedString+Extensions.swift */; };
 		D1E424332227BCC300201729 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424322227BCC300201729 /* URL+Extensions.swift */; };
@@ -70,11 +68,7 @@
 		D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42485222A3C9300201729 /* CompanySearch.swift */; };
 		D1E42489222A6A2200201729 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42488222A6A2200201729 /* ViewModelable.swift */; };
 		D1E4248B222A7A5800201729 /* SPGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4248A222A7A5800201729 /* SPGlobals.swift */; };
-		D1E4248F222BD84500201729 /* CollectionViewCellCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E4248E222BD84500201729 /* CollectionViewCellCommand.swift */; };
-		D1E42492222BE49E00201729 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */; };
-		D1E42494222BE57800201729 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42493222BE57800201729 /* SearchView.swift */; };
 		D1E42496222BE81600201729 /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42495222BE81600201729 /* LayoutManager.swift */; };
-		D1E42498222BE99400201729 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E42497222BE99400201729 /* BaseView.swift */; };
 		D1E424B5222BECDE00201729 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E4249A222BECD700201729 /* SF-Pro-Display-Light.otf */; };
 		D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E4249B222BECD700201729 /* SF-Pro-Text-Bold.otf */; };
 		D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E4249E222BECD800201729 /* SF-Pro-Display-Regular.otf */; };
@@ -84,7 +78,7 @@
 		D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */; };
 		D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */; };
 		D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */; };
-		D1E424D1222C0BDD00201729 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E424D0222C0BDD00201729 /* SimpleView.swift */; };
+		D1EA670C2243A9C2007F9E35 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA670B2243A9C2007F9E35 /* SearchCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +99,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D134EA7F2245063D00D82DAD /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		D134EA812245064B00D82DAD /* StockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockView.xib; sourceTree = "<group>"; };
 		D1E423D02226739600201729 /* StockPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423D32226739600201729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E423D82226739600201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,8 +117,6 @@
 		D1E424092226749200201729 /* SPSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSearchViewController.swift; sourceTree = "<group>"; };
 		D1E4240B222674A800201729 /* SPYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPYouViewController.swift; sourceTree = "<group>"; };
 		D1E4240F22268D7300201729 /* SPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPConstants.swift; sourceTree = "<group>"; };
-		D1E42411222695FC00201729 /* IntialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntialViewController.swift; sourceTree = "<group>"; };
-		D1E4241322269BB100201729 /* SPAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAdViewController.swift; sourceTree = "<group>"; };
 		D1E424152226B00200201729 /* SPNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNewsViewController.swift; sourceTree = "<group>"; };
 		D1E424172226C6DF00201729 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D1E424192226C6F900201729 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -131,9 +125,7 @@
 		D1E4242222278CA600201729 /* SPSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSearchViewModel.swift; sourceTree = "<group>"; };
 		D1E4242422278CB300201729 /* SPSectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSectorViewModel.swift; sourceTree = "<group>"; };
 		D1E4242622278CC800201729 /* SPNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNewsViewModel.swift; sourceTree = "<group>"; };
-		D1E4242822278CD300201729 /* SPAdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAdViewModel.swift; sourceTree = "<group>"; };
 		D1E4242A22278CDE00201729 /* SPYouViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPYouViewModel.swift; sourceTree = "<group>"; };
-		D1E4242C2227B44500201729 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		D1E4242E2227B60100201729 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		D1E424302227BC9500201729 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		D1E424322227BCC300201729 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
@@ -174,11 +166,7 @@
 		D1E42485222A3C9300201729 /* CompanySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanySearch.swift; sourceTree = "<group>"; };
 		D1E42488222A6A2200201729 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		D1E4248A222A7A5800201729 /* SPGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPGlobals.swift; sourceTree = "<group>"; };
-		D1E4248E222BD84500201729 /* CollectionViewCellCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellCommand.swift; sourceTree = "<group>"; };
-		D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
-		D1E42493222BE57800201729 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		D1E42495222BE81600201729 /* LayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
-		D1E42497222BE99400201729 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		D1E4249A222BECD700201729 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		D1E4249B222BECD700201729 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		D1E4249E222BECD800201729 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
@@ -188,7 +176,7 @@
 		D1E424A9222BECDD00201729 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
 		D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
-		D1E424D0222C0BDD00201729 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
+		D1EA670B2243A9C2007F9E35 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,16 +227,15 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				D1EA670D2244FB20007F9E35 /* NavigationService */,
 				D1E42482222A20B900201729 /* ErrorHandler */,
 				D1E424062226743100201729 /* Utils */,
 				D1E424052226742300201729 /* Extensions */,
 				D1E4240E22268D5100201729 /* Globals */,
 				D1E4240D222674F600201729 /* NetworkService */,
-				D1E4248D222BD79A00201729 /* Commands */,
-				D1E4248C222A808000201729 /* Factory */,
 				D1E42487222A6A0200201729 /* Protocols */,
+				D1EA670A2243A94E007F9E35 /* View */,
 				D1E4241D222716C700201729 /* Model */,
-				D1E42403222673EB00201729 /* View */,
 				D1E42402222673E800201729 /* ViewModel */,
 				D1E42401222673E400201729 /* ViewController */,
 				D1E423D32226739600201729 /* AppDelegate.swift */,
@@ -282,12 +269,10 @@
 		D1E42401222673E400201729 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D1E42411222695FC00201729 /* IntialViewController.swift */,
 				D1E424092226749200201729 /* SPSearchViewController.swift */,
 				D1E424072226748100201729 /* SPSectorViewController.swift */,
 				D1E424152226B00200201729 /* SPNewsViewController.swift */,
 				D1E4240B222674A800201729 /* SPYouViewController.swift */,
-				D1E4241322269BB100201729 /* SPAdViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -298,21 +283,9 @@
 				D1E4242222278CA600201729 /* SPSearchViewModel.swift */,
 				D1E4242422278CB300201729 /* SPSectorViewModel.swift */,
 				D1E4242622278CC800201729 /* SPNewsViewModel.swift */,
-				D1E4242822278CD300201729 /* SPAdViewModel.swift */,
 				D1E4242A22278CDE00201729 /* SPYouViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		D1E42403222673EB00201729 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D1E42491222BE49E00201729 /* SearchCollectionViewCell.swift */,
-				D1E42493222BE57800201729 /* SearchView.swift */,
-				D1E42497222BE99400201729 /* BaseView.swift */,
-				D1E424D0222C0BDD00201729 /* SimpleView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D1E424052226742300201729 /* Extensions */ = {
@@ -458,30 +431,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		D1E4248C222A808000201729 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				D1E4242C2227B44500201729 /* ViewControllerFactory.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		D1E4248D222BD79A00201729 /* Commands */ = {
-			isa = PBXGroup;
-			children = (
-				D1E42490222BD8E200201729 /* CollectionViewCellCommand */,
-			);
-			path = Commands;
-			sourceTree = "<group>";
-		};
-		D1E42490222BD8E200201729 /* CollectionViewCellCommand */ = {
-			isa = PBXGroup;
-			children = (
-				D1E4248E222BD84500201729 /* CollectionViewCellCommand.swift */,
-			);
-			path = CollectionViewCellCommand;
-			sourceTree = "<group>";
-		};
 		D1E42499222BEC3300201729 /* Recources */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,6 +445,23 @@
 				D1E424A0222BECD900201729 /* SF-Pro-Text-Regular.otf */,
 			);
 			path = Recources;
+			sourceTree = "<group>";
+		};
+		D1EA670A2243A94E007F9E35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1EA670B2243A9C2007F9E35 /* SearchCollectionViewCell.swift */,
+				D134EA7F2245063D00D82DAD /* StockView.swift */,
+				D134EA812245064B00D82DAD /* StockView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1EA670D2244FB20007F9E35 /* NavigationService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +572,7 @@
 				D1E423DE2226739800201729 /* LaunchScreen.storyboard in Resources */,
 				D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */,
 				D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */,
+				D134EA822245064B00D82DAD /* StockView.xib in Resources */,
 				D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */,
 				D1E424C1222BECDE00201729 /* SF-Pro-Text-Medium.otf in Resources */,
 				D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */,
@@ -648,17 +615,13 @@
 				D1E4246F2227F4CD00201729 /* JSONParameterEncoder.swift in Sources */,
 				D1E4247B2229DF9F00201729 /* StockModel.swift in Sources */,
 				D1E42496222BE81600201729 /* LayoutManager.swift in Sources */,
-				D1E4242922278CD300201729 /* SPAdViewModel.swift in Sources */,
 				D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */,
+				D1EA670C2243A9C2007F9E35 /* SearchCollectionViewCell.swift in Sources */,
 				D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */,
-				D1E4242D2227B44500201729 /* ViewControllerFactory.swift in Sources */,
 				D1E424082226748100201729 /* SPSectorViewController.swift in Sources */,
-				D1E42492222BE49E00201729 /* SearchCollectionViewCell.swift in Sources */,
 				D1E4242B22278CDE00201729 /* SPYouViewModel.swift in Sources */,
 				D1E424572227C20300201729 /* UILayoutPriority+Extensions.swift in Sources */,
-				D1E42494222BE57800201729 /* SearchView.swift in Sources */,
 				D1E424392227BDB000201729 /* Dispatch+Extensions.swift in Sources */,
-				D1E42412222695FC00201729 /* IntialViewController.swift in Sources */,
 				D1E424452227BF6900201729 /* UISearchBar+Extensions.swift in Sources */,
 				D1E4242722278CC800201729 /* SPNewsViewModel.swift in Sources */,
 				D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */,
@@ -674,19 +637,16 @@
 				D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */,
 				D1E4246D2227D9F600201729 /* URLParameterEncoder.swift in Sources */,
 				D1E4246B2227D87700201729 /* ParameterEncoding.swift in Sources */,
-				D1E4241422269BB100201729 /* SPAdViewController.swift in Sources */,
 				D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */,
 				D1E4248B222A7A5800201729 /* SPGlobals.swift in Sources */,
 				D1E424352227BD2D00201729 /* UserDefaults+Extension.swift in Sources */,
 				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,
 				D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */,
-				D1E4248F222BD84500201729 /* CollectionViewCellCommand.swift in Sources */,
 				D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */,
 				D1E424752228D00900201729 /* SPAPIClient.swift in Sources */,
 				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
 				D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */,
 				D1E424732228AEE800201729 /* Router.swift in Sources */,
-				D1E424D1222C0BDD00201729 /* SimpleView.swift in Sources */,
 				D1E424182226C6DF00201729 /* UIColor+Extensions.swift in Sources */,
 				D1E42481222A1D5900201729 /* NetworkLogger.swift in Sources */,
 				D1E424412227BF0600201729 /* UIImageView+Extensions.swift in Sources */,
@@ -696,10 +656,10 @@
 				D1E4241A2226C6F900201729 /* String+Extensions.swift in Sources */,
 				D1E4243F2227BEC800201729 /* UICollectionView+Extensions.swift in Sources */,
 				D1E424692227D3C600201729 /* HTTPTask.swift in Sources */,
+				D134EA802245063D00D82DAD /* StockView.swift in Sources */,
 				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
 				D1E42484222A20EF00201729 /* AppError.swift in Sources */,
-				D1E42498222BE99400201729 /* BaseView.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
 				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,
 			);

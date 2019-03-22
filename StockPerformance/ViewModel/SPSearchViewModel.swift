@@ -11,6 +11,7 @@ import Foundation
 protocol SPSearchViewModelProtocol: class {
     func haveSearchedForKeyword()
 }
+
 class SPSearchViewModel {
     var networkManager: NetworkManager!
     

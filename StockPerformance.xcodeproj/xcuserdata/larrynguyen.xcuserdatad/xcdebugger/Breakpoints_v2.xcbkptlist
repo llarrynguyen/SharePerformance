@@ -2,4 +2,70 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockPerformance/ViewModel/SPSearchViewModel.swift"
+            timestampString = "574858444.020364"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "search(keywork:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StockPerformance/ViewModel/SPSearchViewModel.swift"
+            timestampString = "574858444.020805"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "search(keywork:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StockPerformance.SPSearchViewModel.search(keywork: Swift.String) -&gt; ()"
+                  moduleName = "StockPerformance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/larrynguyen/Desktop/StockLite/StockPerformance/ViewModel/SPSearchViewModel.swift"
+                  timestampString = "574949881.821528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;StockPerformance.CompanySearchResponse&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in StockPerformance.SPSearchViewModel.search(keywork: Swift.String) -&gt; ()"
+                  moduleName = "StockPerformance"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/larrynguyen/Desktop/StockLite/StockPerformance/ViewModel/SPSearchViewModel.swift"
+                  timestampString = "574949881.823539"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

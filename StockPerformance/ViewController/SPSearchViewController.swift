@@ -34,12 +34,12 @@ class SPSearchViewController: UIViewController {
         self.collectionView.dataSource = self
         self.collectionView.backgroundColor = .clear
         self.collectionView.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: Resources.reusableIdentifiers.searchCell)
-        self.collectionView.register(SimpleView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.simpleView)
+        //self.collectionView.register(SimpleView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.simpleView)
     }
     
     fileprivate func setupSearchUI(){
         let searchBar = UISearchBar(frame: CGRect(x: 0, y: 40, width: self.view.frame.width, height: 40))
-       
+        
         self.view.addSubview(searchBar)
         NSLayoutConstraint.activate([
             searchBar.topAnchor.constraint(equalTo: self.view.topAnchor),
@@ -61,11 +61,11 @@ class SPSearchViewController: UIViewController {
             collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
-        ])
+            ])
         
         self.collectionView = collectionView
     }
-
+    
 }
 
 extension SPSearchViewController: ViewControllerable {
@@ -88,7 +88,9 @@ extension SPSearchViewController: ViewControllerable {
 
 extension SPSearchViewController: SPSearchViewModelProtocol {
     func haveSearchedForKeyword() {
-        
+        mainQueue {
+            self.collectionView.reloadData()
+        }
     }
     
 }
@@ -106,7 +108,7 @@ extension SPSearchViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+        searchViewModel?.search(keywork: searchBar.text ?? "")
     }
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
@@ -131,11 +133,11 @@ extension SPSearchViewController: UICollectionViewDelegate {
         guard kind == UICollectionView.elementKindSectionHeader else {
             return UICollectionReusableView()
         }
-        if let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Resources.reusableIdentifiers.simpleView, for: indexPath) as? SimpleView {
-            view.backgroundColor = UIColor.white
-            return view
-        }
-         return UICollectionReusableView()
+//        if let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Resources.reusableIdentifiers.simpleView, for: indexPath) as? SimpleView {
+//            view.backgroundColor = UIColor.white
+//            return view
+//        }
+        return UICollectionReusableView()
     }
     
     

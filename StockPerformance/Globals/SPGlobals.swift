@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal func backgroundQueue( _ block: @escaping () -> ()){
+internal func mainQueue( _ block: @escaping () -> ()){
     DispatchQueue.main.async {
         block()
     }
