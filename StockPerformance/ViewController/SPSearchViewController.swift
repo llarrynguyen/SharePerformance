@@ -21,9 +21,10 @@ class SPSearchViewController: UIViewController {
     override func loadView() {
         super.loadView()
         setupScrollView()
-        setupTopContainerView()
         setupSearchUI()
+        setupTopContainerView()
         setupTopCollectionView()
+        
         setupCollectionView()
         setupViewController()
     }
@@ -93,21 +94,37 @@ class SPSearchViewController: UIViewController {
     }
     
     fileprivate func setupTopContainerView(){
-        let topContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 700))
+        let topContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 400))
         topContainerView.backgroundColor = .blue
+        self.mainScrollView.addSubview(topContainerView)
         
-        let chartContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 500))
-        
-        let summaryView = SimpleLabelView()
-        summaryView.frame = CGRect(x: 0, y: 500, width: self.view.frame.width, height: 200)
-        topContainerView.addSubview(summaryView)
-        self.summaryView = summaryView
-        
+        let chartContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 300))
         topContainerView.addSubview(chartContainerView)
+        NSLayoutConstraint.activate([
+            chartContainerView.topAnchor.constraint(equalTo: topContainerView.topAnchor),
+            chartContainerView.leadingAnchor.constraint(equalTo: topContainerView.leadingAnchor),
+            chartContainerView.trailingAnchor.constraint(equalTo: topContainerView.trailingAnchor)
+            ])
+        
         self.chartContainerView = chartContainerView
         
-        self.mainScrollView.addSubview(topContainerView)
+        let summaryView = SimpleLabelView()
+        summaryView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
+        topContainerView.addSubview(summaryView)
+        NSLayoutConstraint.activate([
+            summaryView.topAnchor.constraint(equalTo: chartContainerView.bottomAnchor),
+            summaryView.leadingAnchor.constraint(equalTo: topContainerView.leadingAnchor),
+            summaryView.trailingAnchor.constraint(equalTo: topContainerView.trailingAnchor)
+            ])
+        
+        self.summaryView = summaryView
+        NSLayoutConstraint.activate([
+            topContainerView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor),
+            topContainerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            topContainerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            ])
         self.topContainerView = topContainerView
+    
     }
     
     fileprivate func setupSearchUI(){
@@ -146,7 +163,7 @@ class SPSearchViewController: UIViewController {
         self.mainScrollView.addSubview(portfoliaCollectionView)
         
         NSLayoutConstraint.activate([
-            portfoliaCollectionView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor),
+            portfoliaCollectionView.topAnchor.constraint(equalTo: self.topContainerView.bottomAnchor),
             portfoliaCollectionView.heightAnchor.constraint(equalToConstant: 100),
             portfoliaCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             portfoliaCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
