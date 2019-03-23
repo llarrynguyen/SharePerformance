@@ -58,6 +58,29 @@ public extension UIView {
     
 }
 
+public extension UIView
+{
+    public func pinch(_ container: UIView!) -> Void{
+        self.translatesAutoresizingMaskIntoConstraints = false;
+        self.frame = container.frame;
+        container.addSubview(self);
+        NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: container, attribute: .leading, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self, attribute: .trailing, relatedBy: .equal, toItem: container, attribute: .trailing, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: container, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: container, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+    }
+}
+
+public extension UIView {
+    /** Loads instance from nib with the same name. */
+    public func loadNib() -> UIView {
+        let bundle = Bundle(for: type(of: self))
+        let nibName = type(of: self).description().components(separatedBy: ".").last!
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil).first as! UIView
+    }
+}
+
 // MARK: - Properties
 public extension UIView {
     

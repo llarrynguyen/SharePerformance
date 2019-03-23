@@ -8,17 +8,30 @@
 
 import UIKit
 
-class SimpleLableView: UIView {
+class SimpleLabelView: UIView {
 
+    @IBOutlet var contentView: UIView!
     @IBOutlet weak var subLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
     }
-    */
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupView()
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupView(){
+        
+        let name = String(describing: type(of: self))
+        let nib = UINib(nibName: name, bundle: .main)
+        nib.instantiate(withOwner: self, options: nil)
+        
+        //Bundle.main.loadNibNamed("SimpleLableView", owner: self, options: nil)
+        contentView.pinch(self)
+    }
 }

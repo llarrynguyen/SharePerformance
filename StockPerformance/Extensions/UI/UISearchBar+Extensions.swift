@@ -22,6 +22,14 @@ public extension UISearchBar {
         return textField
     }
     
+    public var button: UITextField? {
+        let subViews = subviews.flatMap { $0.subviews }
+        guard let textField = (subViews.filter { $0 is UIButton }).first as? UIButton else {
+            return nil
+        }
+        return button
+    }
+    
     /// SwifterSwift: Text with no spaces or new lines in beginning and end (if applicable).
     public var trimmedText: String? {
         return text?.trimmingCharacters(in: .whitespacesAndNewlines)

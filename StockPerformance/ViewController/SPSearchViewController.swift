@@ -9,6 +9,10 @@
 import UIKit
 
 class SPSearchViewController: UIViewController {
+    weak var mainScrollView: UIScrollView!
+    weak var topContainerView: UIView!
+    weak var summaryView: SimpleLabelView!
+    weak var chartContainerView: UIView!
     weak var collectionView: UICollectionView!
     weak var portfoliaCollectionView: UICollectionView!
     weak var searchBar: UISearchBar!
@@ -16,6 +20,8 @@ class SPSearchViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
+        setupScrollView()
+        setupTopContainerView()
         setupSearchUI()
         setupTopCollectionView()
         setupCollectionView()
@@ -42,19 +48,24 @@ class SPSearchViewController: UIViewController {
             viewModel.delegate = self
         }
         
+        self.navigationController?.navigationBar.isTranslucent = false
+
+        self.mainScrollView.delegate = self
         
         self.searchBar.delegate = self
+        
+        
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        self.collectionView.backgroundColor = .clear
-        self.collectionView.collectionViewLayout = collectionViewFlowLayout
+        self.collectionView.backgroundColor = .gray
+        //self.collectionView.collectionViewLayout = collectionViewFlowLayout
         self.collectionView.register(SearchCollectionViewCell.self, forCellWithReuseIdentifier: Resources.reusableIdentifiers.searchCell)
         
         self.portfoliaCollectionView.delegate = self
         self.portfoliaCollectionView.dataSource = self
         self.portfoliaCollectionView.backgroundColor = .black
         self.portfoliaCollectionView.isScrollEnabled = true
-        self.collectionView.collectionViewLayout = portfoliaCollectionViewFlowLayout
+        //self.portfoliaCollectionView.collectionViewLayout = portfoliaCollectionViewFlowLayout
        
         self.portfoliaCollectionView.register(PortfoliaCollectionViewCell.self, forCellWithReuseIdentifier: Resources.reusableIdentifiers.portfolioCell)
         
@@ -70,28 +81,57 @@ class SPSearchViewController: UIViewController {
         //self.collectionView.register(SimpleView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.simpleView)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    fileprivate func setupScrollView(){
+        let mainScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+       mainScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height * 2)
+        self.view.addSubview(mainScrollView)
+        self.mainScrollView = mainScrollView
+    }
+    
+    fileprivate func setupTopContainerView(){
+        let topContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 700))
+        topContainerView.backgroundColor = .blue
+        
+        let chartContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 500))
+        
+        let summaryView = SimpleLabelView()
+        summaryView.frame = CGRect(x: 0, y: 500, width: self.view.frame.width, height: 200)
+        topContainerView.addSubview(summaryView)
+        self.summaryView = summaryView
+        
+        topContainerView.addSubview(chartContainerView)
+        self.chartContainerView = chartContainerView
+        
+        self.mainScrollView.addSubview(topContainerView)
+        self.topContainerView = topContainerView
+    }
+    
     fileprivate func setupSearchUI(){
         let searchBar = UISearchBar(frame: CGRect(x: 0, y: 40, width: self.view.frame.width, height: 40))
+        self.mainScrollView.addSubview(searchBar)
         
-        self.view.addSubview(searchBar)
         NSLayoutConstraint.activate([
             searchBar.topAnchor.constraint(equalTo: self.view.topAnchor),
             searchBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             searchBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
             ])
         
+        searchBar.placeholder = ConstantTexts.PlaceHolder.searchPlaceholder
         self.searchBar = searchBar
-        self.searchBar.placeholder = ConstantTexts.PlaceHolder.searchPlaceholder
-        
     }
     
     fileprivate func setupCollectionView(){
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(collectionView)
+        self.mainScrollView.addSubview(collectionView)
+        
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: self.portfoliaCollectionView.topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            collectionView.topAnchor.constraint(equalTo: self.portfoliaCollectionView.bottomAnchor),
+            collectionView.heightAnchor.constraint(equalToConstant: 1000),
             collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
             ])
@@ -101,19 +141,19 @@ class SPSearchViewController: UIViewController {
     
     
     fileprivate func setupTopCollectionView(){
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(collectionView)
-        NSLayoutConstraint.activate([
-            self.portfoliaCollectionView.topAnchor.constraint(equalTo: self.searchBar.topAnchor),
-            self.portfoliaCollectionView.bottomAnchor.constraint(equalTo: self.collectionView.bottomAnchor),
-            self.portfoliaCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            self.portfoliaCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
-            ])
+        let portfoliaCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        portfoliaCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        self.mainScrollView.addSubview(portfoliaCollectionView)
         
-        self.collectionView = collectionView
-    }
+        NSLayoutConstraint.activate([
+            portfoliaCollectionView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor),
+            portfoliaCollectionView.heightAnchor.constraint(equalToConstant: 100),
+            portfoliaCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            portfoliaCollectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            ])
     
+        self.portfoliaCollectionView = portfoliaCollectionView
+    }
 }
 
 extension SPSearchViewController: ViewControllerable {
