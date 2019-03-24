@@ -31,7 +31,20 @@ class SPNewsViewController: UIViewController {
         super.viewDidLoad()
         setupViewController()
         
+        let navImageView =  UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        navImageView.image = UIImage(named: "leaf.png")
+        self.navigationItem.titleView = navImageView
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        
         self.mainScrollView.delegate = self
+        
+//        self.financeCollection.register(OneLabelOneButtonView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView)
+//        self.energyCollection.register(OneLabelOneButtonView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView)
+//        self.techCollection.register(OneLabelOneButtonView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView)
+//        self.unilitiesCollection.register(OneLabelOneButtonView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView)
+//        self.healthcareCollection.register(OneLabelOneButtonView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView)
+//        self.consumerServicesCollection.register(OneLabelOneButtonView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView)
+        
     }
     
     fileprivate func setupScrollView(){
@@ -77,3 +90,20 @@ extension SPNewsViewController: ViewControllerable {
 extension SPNewsViewController: UIScrollViewDelegate {
     
 }
+
+extension SPNewsViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard kind == UICollectionView.elementKindSectionHeader else {
+            return UICollectionReusableView()
+        }
+        
+        if let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Resources.reusableIdentifiers.oneLabelOneButtonView, for: indexPath) as? OneLabelOneButtonView {
+            view.backgroundColor = UIColor.white
+            return view
+        }
+        return UICollectionReusableView()
+    }
+    
+    
+}
+

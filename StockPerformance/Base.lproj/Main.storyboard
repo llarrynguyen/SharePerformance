@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c7J-hp-yE0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SIm-HC-nGa">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--You View Controller-->
         <scene sceneID="m7U-vf-fsH">
             <objects>
-                <viewController id="DEZ-6y-aaW" sceneMemberID="viewController">
+                <viewController id="DEZ-6y-aaW" customClass="SPYouViewController" customModule="StockPerformance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FxW-2n-Gur">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +115,51 @@
             </objects>
             <point key="canvasLocation" x="2236" y="-36.431784107946029"/>
         </scene>
+        <!--Start Screen View Controller-->
+        <scene sceneID="c7U-Mb-fpb">
+            <objects>
+                <viewController id="SIm-HC-nGa" customClass="StartScreenViewController" customModule="StockPerformance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C5A-Rs-UV0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="A2c-7s-0w2">
+                                <rect key="frame" x="152" y="393" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="dFr-hd-8Pb"/>
+                                    <constraint firstAttribute="height" constant="110" id="piZ-BG-0a9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leafonly" translatesAutoresizingMaskIntoConstraints="NO" id="rcf-QN-MPf">
+                                <rect key="frame" x="-5" y="39" width="56" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="KZZ-XF-kJk"/>
+                                    <constraint firstAttribute="width" constant="56" id="XSq-ZY-mv0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rcf-QN-MPf" firstAttribute="top" secondItem="GvW-Z2-c7x" secondAttribute="top" constant="-5" id="QRj-ue-YM2"/>
+                            <constraint firstItem="A2c-7s-0w2" firstAttribute="centerY" secondItem="C5A-Rs-UV0" secondAttribute="centerY" id="m5R-mA-NmO"/>
+                            <constraint firstItem="A2c-7s-0w2" firstAttribute="centerX" secondItem="C5A-Rs-UV0" secondAttribute="centerX" id="p9V-2O-Xbb"/>
+                            <constraint firstItem="rcf-QN-MPf" firstAttribute="leading" secondItem="GvW-Z2-c7x" secondAttribute="leading" constant="-5" id="vRk-2s-73T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GvW-Z2-c7x"/>
+                    </view>
+                    <connections>
+                        <outlet property="leafImageView" destination="rcf-QN-MPf" id="wOX-0s-kYw"/>
+                        <outlet property="rectangleImageView" destination="A2c-7s-0w2" id="9Ku-Ls-Q97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGR-C0-amw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340.57971014492756" y="-407.14285714285711"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qxM-Cs-sUQ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c7J-hp-yE0" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarIdentifier" automaticallyAdjustsScrollViewInsets="NO" id="c7J-hp-yE0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ZZd-Kv-ta5">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -145,8 +186,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle" width="100" height="100"/>
         <image name="icons8-folder_invoices-1" width="32" height="32"/>
         <image name="icons8-pc_on_desk" width="32" height="32"/>
         <image name="icons8-search" width="32" height="32"/>
+        <image name="leafonly" width="41" height="40"/>
     </resources>
 </document>

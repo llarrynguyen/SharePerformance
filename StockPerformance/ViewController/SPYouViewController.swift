@@ -13,6 +13,11 @@ class SPYouViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewController()
+        
+        let navImageView =  UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        navImageView.image = UIImage(named: "leaf.png")
+        self.navigationItem.titleView = navImageView
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
     }
     
 

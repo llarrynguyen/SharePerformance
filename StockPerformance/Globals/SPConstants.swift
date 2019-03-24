@@ -32,7 +32,7 @@ struct Resources {
     }
     struct reusableIdentifiers {
         static let searchCell = "searchCell"
-        static let simpleView = "simpleView"
+        static let oneLabelOneButtonView = "oneLabelOneButtonView"
         static let portfolioCell = "portfolioCell"
     }
     

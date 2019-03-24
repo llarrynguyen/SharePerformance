@@ -8,6 +8,7 @@ target 'StockPerformance' do
   # Pods for StockPerformance
     pod 'Charts'
     pod 'RealmSwift'
+    pod 'CardParts'
   target 'StockPerformanceTests' do
     inherit! :search_paths
     # Pods for testing

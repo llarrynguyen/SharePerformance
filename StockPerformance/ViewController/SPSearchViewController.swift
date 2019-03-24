@@ -32,12 +32,12 @@ class SPSearchViewController: UIViewController {
     }
     
     lazy var collectionViewFlowLayout : AdaptableCollectionViewLayout = {
-        let layout = AdaptableCollectionViewLayout(display: .grid)
+        let layout = AdaptableCollectionViewLayout(display: .inline)
         return layout
     }()
     
     lazy var portfoliaCollectionViewFlowLayout : AdaptableCollectionViewLayout = {
-        let layout = AdaptableCollectionViewLayout(display: .inline)
+        let layout = AdaptableCollectionViewLayout(display: .list)
         return layout
     }()
     
@@ -51,8 +51,13 @@ class SPSearchViewController: UIViewController {
             viewModel.delegate = self
         }
         
+        self.navigationItem.title = "Explore Stocks"
         self.navigationController?.navigationBar.isTranslucent = false
-
+        let navImageView =  UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        navImageView.image = UIImage(named: "leaf.png")
+        self.navigationItem.titleView = navImageView
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        
         self.mainScrollView.delegate = self
         
         self.searchBar.delegate = self

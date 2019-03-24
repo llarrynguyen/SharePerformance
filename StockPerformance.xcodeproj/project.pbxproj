@@ -10,8 +10,6 @@
 		4F522831E0F8D7CF9485CE4C /* Pods_StockPerformanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291B6CB337854D676D662879 /* Pods_StockPerformanceTests.framework */; };
 		70F2E8F40BC9FE0CF222C9FA /* Pods_StockPerformanceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44DD26FE0C96EF8D8C448D2 /* Pods_StockPerformanceUITests.framework */; };
 		797A31C213E616A93E27F310 /* Pods_StockPerformance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2131121E28554A4C3E0C9B /* Pods_StockPerformance.framework */; };
-		D134EA802245063D00D82DAD /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134EA7F2245063D00D82DAD /* StockView.swift */; };
-		D134EA822245064B00D82DAD /* StockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D134EA812245064B00D82DAD /* StockView.xib */; };
 		D1D0BFF922450E6300FE4B05 /* PortfoliaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0BFF722450E6300FE4B05 /* PortfoliaCollectionViewCell.swift */; };
 		D1D0BFFA22450E6300FE4B05 /* PortfoliaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0BFF822450E6300FE4B05 /* PortfoliaCollectionViewCell.xib */; };
 		D1D0BFFC22450F1200FE4B05 /* SimpleLableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0BFFB22450F1200FE4B05 /* SimpleLableView.swift */; };
@@ -29,6 +27,9 @@
 		D1D0C0162247630500FE4B05 /* MiniCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C0152247630500FE4B05 /* MiniCardView.xib */; };
 		D1D0C018224769BA00FE4B05 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C017224769BA00FE4B05 /* NewsView.swift */; };
 		D1D0C01A224769CE00FE4B05 /* NewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C019224769CE00FE4B05 /* NewsView.xib */; };
+		D1D0C01C2247842B00FE4B05 /* OneLabelOneButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C01B2247842B00FE4B05 /* OneLabelOneButtonView.swift */; };
+		D1D0C01E2247843E00FE4B05 /* OneLableOneButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C01D2247843E00FE4B05 /* OneLableOneButtonView.xib */; };
+		D1D0C02022484B0C00FE4B05 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C01F22484B0C00FE4B05 /* StartScreenViewController.swift */; };
 		D1E423D42226739600201729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D32226739600201729 /* AppDelegate.swift */; };
 		D1E423D92226739600201729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423D72226739600201729 /* Main.storyboard */; };
 		D1E423DB2226739800201729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DA2226739800201729 /* Assets.xcassets */; };
@@ -126,8 +127,6 @@
 		91311C2FDF643C5AC45107C1 /* Pods-StockPerformanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockPerformanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockPerformanceTests/Pods-StockPerformanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6B1CC2F8319477680F68465 /* Pods-StockPerformance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockPerformance.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockPerformance/Pods-StockPerformance.release.xcconfig"; sourceTree = "<group>"; };
 		C44DD26FE0C96EF8D8C448D2 /* Pods_StockPerformanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockPerformanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D134EA7F2245063D00D82DAD /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
-		D134EA812245064B00D82DAD /* StockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockView.xib; sourceTree = "<group>"; };
 		D1D0BFF722450E6300FE4B05 /* PortfoliaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfoliaCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1D0BFF822450E6300FE4B05 /* PortfoliaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortfoliaCollectionViewCell.xib; sourceTree = "<group>"; };
 		D1D0BFFB22450F1200FE4B05 /* SimpleLableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLableView.swift; sourceTree = "<group>"; };
@@ -145,6 +144,9 @@
 		D1D0C0152247630500FE4B05 /* MiniCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniCardView.xib; sourceTree = "<group>"; };
 		D1D0C017224769BA00FE4B05 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		D1D0C019224769CE00FE4B05 /* NewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsView.xib; sourceTree = "<group>"; };
+		D1D0C01B2247842B00FE4B05 /* OneLabelOneButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLabelOneButtonView.swift; sourceTree = "<group>"; };
+		D1D0C01D2247843E00FE4B05 /* OneLableOneButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneLableOneButtonView.xib; sourceTree = "<group>"; };
+		D1D0C01F22484B0C00FE4B05 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		D1E423D02226739600201729 /* StockPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423D32226739600201729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E423D82226739600201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				D1E424072226748100201729 /* SPSectorViewController.swift */,
 				D1E424152226B00200201729 /* SPNewsViewController.swift */,
 				D1E4240B222674A800201729 /* SPYouViewController.swift */,
+				D1D0C01F22484B0C00FE4B05 /* StartScreenViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -544,8 +547,6 @@
 			isa = PBXGroup;
 			children = (
 				D1EA670B2243A9C2007F9E35 /* SearchCollectionViewCell.swift */,
-				D134EA7F2245063D00D82DAD /* StockView.swift */,
-				D134EA812245064B00D82DAD /* StockView.xib */,
 				D1D0BFF722450E6300FE4B05 /* PortfoliaCollectionViewCell.swift */,
 				D1D0BFF822450E6300FE4B05 /* PortfoliaCollectionViewCell.xib */,
 				D1D0BFFB22450F1200FE4B05 /* SimpleLableView.swift */,
@@ -560,6 +561,8 @@
 				D1D0C0152247630500FE4B05 /* MiniCardView.xib */,
 				D1D0C017224769BA00FE4B05 /* NewsView.swift */,
 				D1D0C019224769CE00FE4B05 /* NewsView.xib */,
+				D1D0C01B2247842B00FE4B05 /* OneLabelOneButtonView.swift */,
+				D1D0C01D2247843E00FE4B05 /* OneLableOneButtonView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -684,7 +687,6 @@
 				D1E423DE2226739800201729 /* LaunchScreen.storyboard in Resources */,
 				D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */,
 				D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */,
-				D134EA822245064B00D82DAD /* StockView.xib in Resources */,
 				D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */,
 				D1D0C00E2247597600FE4B05 /* TwoStateCardView.xib in Resources */,
 				D1E424C1222BECDE00201729 /* SF-Pro-Text-Medium.otf in Resources */,
@@ -693,6 +695,7 @@
 				D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */,
 				D1E424BB222BECDE00201729 /* SF-Pro-Text-Regular.otf in Resources */,
 				D1E423DB2226739800201729 /* Assets.xcassets in Resources */,
+				D1D0C01E2247843E00FE4B05 /* OneLableOneButtonView.xib in Resources */,
 				D1E424C0222BECDE00201729 /* SF-Pro-Display-Heavy.otf in Resources */,
 				D1E424B5222BECDE00201729 /* SF-Pro-Display-Light.otf in Resources */,
 				D1D0C00A224749E500FE4B05 /* SuperSimpleLableView.xib in Resources */,
@@ -744,15 +747,29 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StockPerformance/Pods-StockPerformance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CardParts/CardParts.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CardParts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -837,6 +854,7 @@
 				D1E424552227C1BB00201729 /* UIEdgeInsets+Extensions.swift in Sources */,
 				D1E4240A2226749200201729 /* SPSearchViewController.swift in Sources */,
 				D1E4246D2227D9F600201729 /* URLParameterEncoder.swift in Sources */,
+				D1D0C02022484B0C00FE4B05 /* StartScreenViewController.swift in Sources */,
 				D1D0BFF922450E6300FE4B05 /* PortfoliaCollectionViewCell.swift in Sources */,
 				D1E4246B2227D87700201729 /* ParameterEncoding.swift in Sources */,
 				D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */,
@@ -845,6 +863,7 @@
 				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,
 				D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */,
 				D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */,
+				D1D0C01C2247842B00FE4B05 /* OneLabelOneButtonView.swift in Sources */,
 				D1E424752228D00900201729 /* SPAPIClient.swift in Sources */,
 				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
 				D1E424432227BF2D00201729 /* UILabel+Extensions.swift in Sources */,
@@ -860,7 +879,6 @@
 				D1E4243F2227BEC800201729 /* UICollectionView+Extensions.swift in Sources */,
 				D1E424692227D3C600201729 /* HTTPTask.swift in Sources */,
 				D1D0C001224513C100FE4B05 /* AdaptableCollectionViewLayout.swift in Sources */,
-				D134EA802245063D00D82DAD /* StockView.swift in Sources */,
 				D1D0C0032245141900FE4B05 /* CollectionViewLayoutBacker.swift in Sources */,
 				D1D0C010224759C700FE4B05 /* CardView.swift in Sources */,
 				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
