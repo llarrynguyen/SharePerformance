@@ -8,6 +8,15 @@
 
 import Foundation
 
+enum Industry {
+    case Energy
+    case Finance
+    case Healthcare
+    case Utilities
+    case Technology
+    case ConsumerService
+}
+
 protocol SPSearchViewModelProtocol: class {
     func haveSearchedForKeyword()
 }
