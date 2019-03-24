@@ -87,8 +87,12 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8P-7y-Ff2">
-                    <rect key="frame" x="116" y="216" width="74" height="32"/>
+                    <rect key="frame" x="115.5" y="216" width="74" height="32"/>
                     <color key="backgroundColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="I3o-v0-0nU"/>
+                        <constraint firstAttribute="height" constant="32" id="t9b-US-l6W"/>
+                    </constraints>
                     <state key="normal" title="Read" image="icons8-generic_book_file_type_filled">
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
@@ -116,13 +120,13 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="zvV-S8-cx1" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="DQy-mm-k2G"/>
+                <constraint firstItem="H8P-7y-Ff2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fru-Hc-KHA"/>
                 <constraint firstItem="7Qv-hK-Lz5" firstAttribute="centerY" secondItem="H8P-7y-Ff2" secondAttribute="centerY" id="Kcd-Qi-8Ww"/>
                 <constraint firstItem="AUm-4r-eMh" firstAttribute="top" secondItem="F7B-f1-FB2" secondAttribute="bottom" constant="-8" id="L89-qt-k6h"/>
                 <constraint firstItem="zvV-S8-cx1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XbN-NF-Lpj"/>
                 <constraint firstItem="ytK-ZI-KZY" firstAttribute="top" secondItem="AUm-4r-eMh" secondAttribute="bottom" constant="-10" id="dc0-zq-yh6"/>
                 <constraint firstItem="X9c-Rp-LIo" firstAttribute="top" secondItem="zvV-S8-cx1" secondAttribute="bottom" constant="16" id="dlT-7r-rBK"/>
                 <constraint firstItem="F7B-f1-FB2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="146" id="fVK-cV-YqO"/>
-                <constraint firstItem="7Qv-hK-Lz5" firstAttribute="leading" secondItem="H8P-7y-Ff2" secondAttribute="trailing" constant="69" id="gK0-fc-lNy"/>
                 <constraint firstItem="ytK-ZI-KZY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="i5f-Ar-e4H"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Qv-hK-Lz5" secondAttribute="trailing" constant="16" id="iSx-2i-sdy"/>
                 <constraint firstItem="AUm-4r-eMh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="p0p-ze-5Fn"/>

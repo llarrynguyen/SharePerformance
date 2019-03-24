@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="3173.913043478261" y="-36.830357142857139"/>
         </scene>
-        <!--You View Controller-->
+        <!--News View Controller-->
         <scene sceneID="rqM-Tr-bp2">
             <objects>
-                <viewController id="LnE-n1-GIR" customClass="SPYouViewController" customModule="StockPerformance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LnE-n1-GIR" customClass="SPNewsViewController" customModule="StockPerformance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dA1-6t-3Oi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
