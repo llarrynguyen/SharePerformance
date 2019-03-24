@@ -9,6 +9,13 @@
 import UIKit
 
 class SPNewsViewController: UIViewController {
+    
+    weak var financeCollection: UICollectionView!
+    weak var energyCollection: UICollectionView!
+    weak var techCollection: UICollectionView!
+    weak var unilitiesCollection: UICollectionView!
+    weak var healthcareCollection: UICollectionView!
+    weak var consumerServicesCollection: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

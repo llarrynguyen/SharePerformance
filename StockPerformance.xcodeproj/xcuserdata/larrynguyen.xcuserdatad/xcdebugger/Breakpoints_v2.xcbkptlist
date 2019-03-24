@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockPerformance/ViewModel/SPSearchViewModel.swift"
-            timestampString = "574858444.020364"
+            timestampString = "575110288.6650651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "search(keywork:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StockPerformance/ViewModel/SPSearchViewModel.swift"
-            timestampString = "574858444.020805"
+            timestampString = "575110288.665506"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "search(keywork:)"
             landmarkType = "7">
             <Locations>
@@ -42,11 +42,11 @@
                   moduleName = "StockPerformance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/larrynguyen/Desktop/StockLite/StockPerformance/ViewModel/SPSearchViewModel.swift"
-                  timestampString = "575105089.632292"
+                  timestampString = "575110288.791734"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
                   offsetFromSymbolStart = "31">
                </Location>
                <Location
@@ -57,11 +57,11 @@
                   moduleName = "StockPerformance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/larrynguyen/Desktop/StockLite/StockPerformance/ViewModel/SPSearchViewModel.swift"
-                  timestampString = "575105089.6349469"
+                  timestampString = "575110288.793938"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
                   offsetFromSymbolStart = "41">
                </Location>
             </Locations>

@@ -297,7 +297,6 @@
 		D1E423C72226739600201729 = {
 			isa = PBXGroup;
 			children = (
-				D1D0BFFF2245139600FE4B05 /* CollectionViewLayout */,
 				D1E423D22226739600201729 /* StockPerformance */,
 				D1E423E72226739800201729 /* StockPerformanceTests */,
 				D1E423F22226739800201729 /* StockPerformanceUITests */,
@@ -320,6 +319,7 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				D1D0BFFF2245139600FE4B05 /* CollectionViewLayout */,
 				D1EA670D2244FB20007F9E35 /* NavigationService */,
 				D1E42482222A20B900201729 /* ErrorHandler */,
 				D1E424062226743100201729 /* Utils */,
@@ -374,8 +374,8 @@
 			isa = PBXGroup;
 			children = (
 				D1E4242222278CA600201729 /* SPSearchViewModel.swift */,
-				D1E4242422278CB300201729 /* SPSectorViewModel.swift */,
 				D1E4242622278CC800201729 /* SPNewsViewModel.swift */,
+				D1E4242422278CB300201729 /* SPSectorViewModel.swift */,
 				D1E4242A22278CDE00201729 /* SPYouViewModel.swift */,
 			);
 			path = ViewModel;
