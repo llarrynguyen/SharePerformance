@@ -30,6 +30,7 @@ class TwoStateCardView: UIView {
         nib.instantiate(withOwner: self, options: nil)
         contentView.pinch(self)
         translatesAutoresizingMaskIntoConstraints = false
+       
     }
     
 }

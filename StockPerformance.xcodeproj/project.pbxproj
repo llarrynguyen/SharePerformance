@@ -27,6 +27,8 @@
 		D1D0C012224759D300FE4B05 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C011224759D300FE4B05 /* CardView.xib */; };
 		D1D0C014224762F700FE4B05 /* MiniCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C013224762F700FE4B05 /* MiniCardView.swift */; };
 		D1D0C0162247630500FE4B05 /* MiniCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C0152247630500FE4B05 /* MiniCardView.xib */; };
+		D1D0C018224769BA00FE4B05 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C017224769BA00FE4B05 /* NewsView.swift */; };
+		D1D0C01A224769CE00FE4B05 /* NewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C019224769CE00FE4B05 /* NewsView.xib */; };
 		D1E423D42226739600201729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D32226739600201729 /* AppDelegate.swift */; };
 		D1E423D92226739600201729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423D72226739600201729 /* Main.storyboard */; };
 		D1E423DB2226739800201729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DA2226739800201729 /* Assets.xcassets */; };
@@ -141,6 +143,8 @@
 		D1D0C011224759D300FE4B05 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		D1D0C013224762F700FE4B05 /* MiniCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCardView.swift; sourceTree = "<group>"; };
 		D1D0C0152247630500FE4B05 /* MiniCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniCardView.xib; sourceTree = "<group>"; };
+		D1D0C017224769BA00FE4B05 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		D1D0C019224769CE00FE4B05 /* NewsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsView.xib; sourceTree = "<group>"; };
 		D1E423D02226739600201729 /* StockPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423D32226739600201729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E423D82226739600201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -554,6 +558,8 @@
 				D1D0C011224759D300FE4B05 /* CardView.xib */,
 				D1D0C013224762F700FE4B05 /* MiniCardView.swift */,
 				D1D0C0152247630500FE4B05 /* MiniCardView.xib */,
+				D1D0C017224769BA00FE4B05 /* NewsView.swift */,
+				D1D0C019224769CE00FE4B05 /* NewsView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -690,6 +696,7 @@
 				D1E424C0222BECDE00201729 /* SF-Pro-Display-Heavy.otf in Resources */,
 				D1E424B5222BECDE00201729 /* SF-Pro-Display-Light.otf in Resources */,
 				D1D0C00A224749E500FE4B05 /* SuperSimpleLableView.xib in Resources */,
+				D1D0C01A224769CE00FE4B05 /* NewsView.xib in Resources */,
 				D1E423D92226739600201729 /* Main.storyboard in Resources */,
 				D1D0BFFE22450F2700FE4B05 /* SimpleLabelView.xib in Resources */,
 			);
@@ -860,6 +867,7 @@
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
 				D1E42484222A20EF00201729 /* AppError.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
+				D1D0C018224769BA00FE4B05 /* NewsView.swift in Sources */,
 				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

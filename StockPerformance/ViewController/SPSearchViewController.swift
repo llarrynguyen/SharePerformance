@@ -17,6 +17,7 @@ class SPSearchViewController: UIViewController {
     weak var portfoliaCollectionView: UICollectionView!
     weak var topLabelView: SuperSimpleLableView!
     weak var searchBar: UISearchBar!
+    weak var twoStageCardView: TwoStateCardView!
     private var searchViewModel: SPSearchViewModel?
     
     override func loadView() {
@@ -27,6 +28,7 @@ class SPSearchViewController: UIViewController {
         setupTopCollectionView()
         setupCollectionView()
         setupViewController()
+        setupBottomTwoStageCardViews()
     }
     
     lazy var collectionViewFlowLayout : AdaptableCollectionViewLayout = {
@@ -175,6 +177,22 @@ class SPSearchViewController: UIViewController {
             ])
     
         self.portfoliaCollectionView = portfoliaCollectionView
+    }
+    
+    fileprivate func setupBottomTwoStageCardViews(){
+        let cardView = TwoStateCardView()
+        cardView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height * 3/4)
+        self.mainScrollView.addSubview(cardView)
+        
+        NSLayoutConstraint.activate([
+            cardView.topMiniCardView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0),
+            cardView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            cardView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            ])
+        
+        self.twoStageCardView = cardView
+        
+  
     }
 }
 
