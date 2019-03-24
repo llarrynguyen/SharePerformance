@@ -15,6 +15,7 @@ class SPSearchViewController: UIViewController {
     weak var chartContainerView: UIView!
     weak var collectionView: UICollectionView!
     weak var portfoliaCollectionView: UICollectionView!
+    weak var topLabelView: SuperSimpleLableView!
     weak var searchBar: UISearchBar!
     private var searchViewModel: SPSearchViewModel?
     
@@ -24,7 +25,6 @@ class SPSearchViewController: UIViewController {
         setupSearchUI()
         setupTopContainerView()
         setupTopCollectionView()
-        
         setupCollectionView()
         setupViewController()
     }
@@ -54,7 +54,6 @@ class SPSearchViewController: UIViewController {
         self.mainScrollView.delegate = self
         
         self.searchBar.delegate = self
-        
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -94,45 +93,51 @@ class SPSearchViewController: UIViewController {
     }
     
     fileprivate func setupTopContainerView(){
-        let topContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 400))
+        let topContainerView = UIView(frame: CGRect(x: 0, y: 90, width: self.view.frame.width, height: 400))
         topContainerView.backgroundColor = .blue
         self.mainScrollView.addSubview(topContainerView)
-        
-        let chartContainerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 300))
-        topContainerView.addSubview(chartContainerView)
-        NSLayoutConstraint.activate([
-            chartContainerView.topAnchor.constraint(equalTo: topContainerView.topAnchor),
-            chartContainerView.leadingAnchor.constraint(equalTo: topContainerView.leadingAnchor),
-            chartContainerView.trailingAnchor.constraint(equalTo: topContainerView.trailingAnchor)
-            ])
-        
-        self.chartContainerView = chartContainerView
+
+        self.topContainerView = topContainerView
         
         let summaryView = SimpleLabelView()
         summaryView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
         topContainerView.addSubview(summaryView)
         NSLayoutConstraint.activate([
-            summaryView.topAnchor.constraint(equalTo: chartContainerView.bottomAnchor),
-            summaryView.leadingAnchor.constraint(equalTo: topContainerView.leadingAnchor),
-            summaryView.trailingAnchor.constraint(equalTo: topContainerView.trailingAnchor)
+            summaryView.topAnchor.constraint(equalTo: self.topContainerView.topAnchor),
+            summaryView.leadingAnchor.constraint(equalTo: self.topContainerView.leadingAnchor),
+            summaryView.trailingAnchor.constraint(equalTo: self.topContainerView.trailingAnchor)
             ])
         
         self.summaryView = summaryView
+        
+        let chartContainerView = UIView(frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: 300))
+        topContainerView.addSubview(chartContainerView)
         NSLayoutConstraint.activate([
-            topContainerView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor),
-            topContainerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            topContainerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            chartContainerView.topAnchor.constraint(equalTo: summaryView.bottomAnchor),
+            chartContainerView.leadingAnchor.constraint(equalTo: self.topContainerView.leadingAnchor),
+            chartContainerView.trailingAnchor.constraint(equalTo: self.topContainerView.trailingAnchor)
             ])
-        self.topContainerView = topContainerView
-    
+        
+        self.chartContainerView = chartContainerView
+
     }
     
     fileprivate func setupSearchUI(){
-        let searchBar = UISearchBar(frame: CGRect(x: 0, y: 40, width: self.view.frame.width, height: 40))
+        let topLabel = SuperSimpleLableView()
+        topLabel.frame = CGRect(x: 0, y: 10, width: self.view.frame.width, height: 30)
+        self.mainScrollView.addSubview(topLabel)
+        NSLayoutConstraint.activate([
+            topLabel.topAnchor.constraint(equalTo: self.view.topAnchor),
+            topLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            topLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            ])
+        self.topLabelView = topLabel
+        
+        let searchBar = UISearchBar(frame: CGRect(x: 0, y: 50, width: self.view.frame.width, height: 40))
         self.mainScrollView.addSubview(searchBar)
         
         NSLayoutConstraint.activate([
-            searchBar.topAnchor.constraint(equalTo: self.view.topAnchor),
+            searchBar.topAnchor.constraint(equalTo: self.topLabelView.bottomAnchor),
             searchBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             searchBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
             ])
