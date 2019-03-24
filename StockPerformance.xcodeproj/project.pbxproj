@@ -21,6 +21,12 @@
 		D1D0C0062245154F00FE4B05 /* Dynamik.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C0052245154F00FE4B05 /* Dynamik.swift */; };
 		D1D0C008224749DD00FE4B05 /* SuperSimpleLableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C007224749DD00FE4B05 /* SuperSimpleLableView.swift */; };
 		D1D0C00A224749E500FE4B05 /* SuperSimpleLableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C009224749E500FE4B05 /* SuperSimpleLableView.xib */; };
+		D1D0C00C2247595E00FE4B05 /* TwoStateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C00B2247595E00FE4B05 /* TwoStateCardView.swift */; };
+		D1D0C00E2247597600FE4B05 /* TwoStateCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C00D2247597600FE4B05 /* TwoStateCardView.xib */; };
+		D1D0C010224759C700FE4B05 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C00F224759C700FE4B05 /* CardView.swift */; };
+		D1D0C012224759D300FE4B05 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C011224759D300FE4B05 /* CardView.xib */; };
+		D1D0C014224762F700FE4B05 /* MiniCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C013224762F700FE4B05 /* MiniCardView.swift */; };
+		D1D0C0162247630500FE4B05 /* MiniCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C0152247630500FE4B05 /* MiniCardView.xib */; };
 		D1E423D42226739600201729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D32226739600201729 /* AppDelegate.swift */; };
 		D1E423D92226739600201729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423D72226739600201729 /* Main.storyboard */; };
 		D1E423DB2226739800201729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DA2226739800201729 /* Assets.xcassets */; };
@@ -129,6 +135,12 @@
 		D1D0C0052245154F00FE4B05 /* Dynamik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamik.swift; sourceTree = "<group>"; };
 		D1D0C007224749DD00FE4B05 /* SuperSimpleLableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSimpleLableView.swift; sourceTree = "<group>"; };
 		D1D0C009224749E500FE4B05 /* SuperSimpleLableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperSimpleLableView.xib; sourceTree = "<group>"; };
+		D1D0C00B2247595E00FE4B05 /* TwoStateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoStateCardView.swift; sourceTree = "<group>"; };
+		D1D0C00D2247597600FE4B05 /* TwoStateCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoStateCardView.xib; sourceTree = "<group>"; };
+		D1D0C00F224759C700FE4B05 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D1D0C011224759D300FE4B05 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		D1D0C013224762F700FE4B05 /* MiniCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCardView.swift; sourceTree = "<group>"; };
+		D1D0C0152247630500FE4B05 /* MiniCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniCardView.xib; sourceTree = "<group>"; };
 		D1E423D02226739600201729 /* StockPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423D32226739600201729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E423D82226739600201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -536,6 +548,12 @@
 				D1D0BFFD22450F2700FE4B05 /* SimpleLabelView.xib */,
 				D1D0C007224749DD00FE4B05 /* SuperSimpleLableView.swift */,
 				D1D0C009224749E500FE4B05 /* SuperSimpleLableView.xib */,
+				D1D0C00B2247595E00FE4B05 /* TwoStateCardView.swift */,
+				D1D0C00D2247597600FE4B05 /* TwoStateCardView.xib */,
+				D1D0C00F224759C700FE4B05 /* CardView.swift */,
+				D1D0C011224759D300FE4B05 /* CardView.xib */,
+				D1D0C013224762F700FE4B05 /* MiniCardView.swift */,
+				D1D0C0152247630500FE4B05 /* MiniCardView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -655,13 +673,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1D0C0162247630500FE4B05 /* MiniCardView.xib in Resources */,
 				D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */,
 				D1E423DE2226739800201729 /* LaunchScreen.storyboard in Resources */,
 				D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */,
 				D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */,
 				D134EA822245064B00D82DAD /* StockView.xib in Resources */,
 				D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */,
+				D1D0C00E2247597600FE4B05 /* TwoStateCardView.xib in Resources */,
 				D1E424C1222BECDE00201729 /* SF-Pro-Text-Medium.otf in Resources */,
+				D1D0C012224759D300FE4B05 /* CardView.xib in Resources */,
 				D1D0BFFA22450E6300FE4B05 /* PortfoliaCollectionViewCell.xib in Resources */,
 				D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */,
 				D1E424BB222BECDE00201729 /* SF-Pro-Text-Regular.otf in Resources */,
@@ -775,6 +796,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E4241022268D7300201729 /* SPConstants.swift in Sources */,
+				D1D0C00C2247595E00FE4B05 /* TwoStateCardView.swift in Sources */,
 				D1E4244F2227C01900201729 /* UITextView+Extensions.swift in Sources */,
 				D1D0BFFC22450F1200FE4B05 /* SimpleLableView.swift in Sources */,
 				D1E424332227BCC300201729 /* URL+Extensions.swift in Sources */,
@@ -798,6 +820,7 @@
 				D1E424162226B00200201729 /* SPNewsViewController.swift in Sources */,
 				D1E424672227D35200201729 /* HTTPMethod.swift in Sources */,
 				D1E424372227BD7000201729 /* Date+Extensions.swift in Sources */,
+				D1D0C014224762F700FE4B05 /* MiniCardView.swift in Sources */,
 				D1E4241F222716D800201729 /* AppColor.swift in Sources */,
 				D1E42489222A6A2200201729 /* ViewModelable.swift in Sources */,
 				D1E42477222907D300201729 /* NetworkManager.swift in Sources */,
@@ -832,6 +855,7 @@
 				D1D0C001224513C100FE4B05 /* AdaptableCollectionViewLayout.swift in Sources */,
 				D134EA802245063D00D82DAD /* StockView.swift in Sources */,
 				D1D0C0032245141900FE4B05 /* CollectionViewLayoutBacker.swift in Sources */,
+				D1D0C010224759C700FE4B05 /* CardView.swift in Sources */,
 				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
 				D1E42484222A20EF00201729 /* AppError.swift in Sources */,
