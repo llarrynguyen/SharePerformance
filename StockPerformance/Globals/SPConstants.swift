@@ -34,6 +34,7 @@ struct Resources {
         static let searchCell = "searchCell"
         static let oneLabelOneButtonView = "oneLabelOneButtonView"
         static let portfolioCell = "portfolioCell"
+        static let youTopHeaderCell = "youTopHeaderCell"
     }
     
     struct Sizes {

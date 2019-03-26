@@ -37,7 +37,7 @@ class StartScreenViewController: UIViewController {
             
             
             UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25) {
-                self.leafImageView.center = CGPoint(x: self.leafImageView.center.x + 80, y: self.leafImageView.center.y + 15)
+                self.leafImageView.center = CGPoint(x: self.leafImageView.center.x + 120, y: self.leafImageView.center.y + 15)
             }
             
             UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.25) {

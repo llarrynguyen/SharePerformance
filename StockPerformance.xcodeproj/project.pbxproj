@@ -30,6 +30,14 @@
 		D1D0C01C2247842B00FE4B05 /* OneLabelOneButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C01B2247842B00FE4B05 /* OneLabelOneButtonView.swift */; };
 		D1D0C01E2247843E00FE4B05 /* OneLableOneButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C01D2247843E00FE4B05 /* OneLableOneButtonView.xib */; };
 		D1D0C02022484B0C00FE4B05 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C01F22484B0C00FE4B05 /* StartScreenViewController.swift */; };
+		D1D0C0222248526500FE4B05 /* YouHeaderBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C0212248526500FE4B05 /* YouHeaderBottomView.swift */; };
+		D1D0C0242248527200FE4B05 /* YouHeaderBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C0232248527200FE4B05 /* YouHeaderBottomView.xib */; };
+		D1D0C02622485C6600FE4B05 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C02522485C6600FE4B05 /* StockView.swift */; };
+		D1D0C02822485C7400FE4B05 /* StockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C02722485C7400FE4B05 /* StockView.xib */; };
+		D1D0C02B22485E6F00FE4B05 /* YouTopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C02922485E6F00FE4B05 /* YouTopCollectionViewCell.swift */; };
+		D1D0C02C22485E6F00FE4B05 /* YouTopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C02A22485E6F00FE4B05 /* YouTopCollectionViewCell.xib */; };
+		D1D0C02E2248600A00FE4B05 /* TopYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D0C02D2248600A00FE4B05 /* TopYouView.swift */; };
+		D1D0C0302248602100FE4B05 /* TopYouView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1D0C02F2248602100FE4B05 /* TopYouView.xib */; };
 		D1E423D42226739600201729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E423D32226739600201729 /* AppDelegate.swift */; };
 		D1E423D92226739600201729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E423D72226739600201729 /* Main.storyboard */; };
 		D1E423DB2226739800201729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E423DA2226739800201729 /* Assets.xcassets */; };
@@ -147,6 +155,14 @@
 		D1D0C01B2247842B00FE4B05 /* OneLabelOneButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLabelOneButtonView.swift; sourceTree = "<group>"; };
 		D1D0C01D2247843E00FE4B05 /* OneLableOneButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneLableOneButtonView.xib; sourceTree = "<group>"; };
 		D1D0C01F22484B0C00FE4B05 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		D1D0C0212248526500FE4B05 /* YouHeaderBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouHeaderBottomView.swift; sourceTree = "<group>"; };
+		D1D0C0232248527200FE4B05 /* YouHeaderBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouHeaderBottomView.xib; sourceTree = "<group>"; };
+		D1D0C02522485C6600FE4B05 /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		D1D0C02722485C7400FE4B05 /* StockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockView.xib; sourceTree = "<group>"; };
+		D1D0C02922485E6F00FE4B05 /* YouTopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTopCollectionViewCell.swift; sourceTree = "<group>"; };
+		D1D0C02A22485E6F00FE4B05 /* YouTopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouTopCollectionViewCell.xib; sourceTree = "<group>"; };
+		D1D0C02D2248600A00FE4B05 /* TopYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopYouView.swift; sourceTree = "<group>"; };
+		D1D0C02F2248602100FE4B05 /* TopYouView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopYouView.xib; sourceTree = "<group>"; };
 		D1E423D02226739600201729 /* StockPerformance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPerformance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E423D32226739600201729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E423D82226739600201729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -563,6 +579,14 @@
 				D1D0C019224769CE00FE4B05 /* NewsView.xib */,
 				D1D0C01B2247842B00FE4B05 /* OneLabelOneButtonView.swift */,
 				D1D0C01D2247843E00FE4B05 /* OneLableOneButtonView.xib */,
+				D1D0C0212248526500FE4B05 /* YouHeaderBottomView.swift */,
+				D1D0C0232248527200FE4B05 /* YouHeaderBottomView.xib */,
+				D1D0C02522485C6600FE4B05 /* StockView.swift */,
+				D1D0C02722485C7400FE4B05 /* StockView.xib */,
+				D1D0C02922485E6F00FE4B05 /* YouTopCollectionViewCell.swift */,
+				D1D0C02A22485E6F00FE4B05 /* YouTopCollectionViewCell.xib */,
+				D1D0C02D2248600A00FE4B05 /* TopYouView.swift */,
+				D1D0C02F2248602100FE4B05 /* TopYouView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -684,14 +708,18 @@
 			files = (
 				D1D0C0162247630500FE4B05 /* MiniCardView.xib in Resources */,
 				D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */,
+				D1D0C0302248602100FE4B05 /* TopYouView.xib in Resources */,
 				D1E423DE2226739800201729 /* LaunchScreen.storyboard in Resources */,
 				D1E424B6222BECDE00201729 /* SF-Pro-Text-Bold.otf in Resources */,
 				D1E424B9222BECDE00201729 /* SF-Pro-Display-Regular.otf in Resources */,
+				D1D0C02822485C7400FE4B05 /* StockView.xib in Resources */,
 				D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */,
+				D1D0C0242248527200FE4B05 /* YouHeaderBottomView.xib in Resources */,
 				D1D0C00E2247597600FE4B05 /* TwoStateCardView.xib in Resources */,
 				D1E424C1222BECDE00201729 /* SF-Pro-Text-Medium.otf in Resources */,
 				D1D0C012224759D300FE4B05 /* CardView.xib in Resources */,
 				D1D0BFFA22450E6300FE4B05 /* PortfoliaCollectionViewCell.xib in Resources */,
+				D1D0C02C22485E6F00FE4B05 /* YouTopCollectionViewCell.xib in Resources */,
 				D1E424C4222BECDE00201729 /* SF-Pro-Display-Medium.otf in Resources */,
 				D1E424BB222BECDE00201729 /* SF-Pro-Text-Regular.otf in Resources */,
 				D1E423DB2226739800201729 /* Assets.xcassets in Resources */,
@@ -848,6 +876,7 @@
 				D1E4241F222716D800201729 /* AppColor.swift in Sources */,
 				D1E42489222A6A2200201729 /* ViewModelable.swift in Sources */,
 				D1E42477222907D300201729 /* NetworkManager.swift in Sources */,
+				D1D0C02B22485E6F00FE4B05 /* YouTopCollectionViewCell.swift in Sources */,
 				D1E4243B2227BE4E00201729 /* UIButton+Extensions.swift in Sources */,
 				D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */,
 				D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */,
@@ -863,6 +892,7 @@
 				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,
 				D1E4242322278CA600201729 /* SPSearchViewModel.swift in Sources */,
 				D1E4243D2227BE8900201729 /* UIAlertController+Extensions.swift in Sources */,
+				D1D0C0222248526500FE4B05 /* YouHeaderBottomView.swift in Sources */,
 				D1D0C01C2247842B00FE4B05 /* OneLabelOneButtonView.swift in Sources */,
 				D1E424752228D00900201729 /* SPAPIClient.swift in Sources */,
 				D1E424472227BF8F00201729 /* UISegmentedControl+Extensions.swift in Sources */,
@@ -883,9 +913,11 @@
 				D1D0C010224759C700FE4B05 /* CardView.swift in Sources */,
 				D1E4247D2229DFA800201729 /* NewsModel.swift in Sources */,
 				D1E4242F2227B60100201729 /* UIImage+Extensions.swift in Sources */,
+				D1D0C02622485C6600FE4B05 /* StockView.swift in Sources */,
 				D1E42484222A20EF00201729 /* AppError.swift in Sources */,
 				D1E4240C222674A800201729 /* SPYouViewController.swift in Sources */,
 				D1D0C018224769BA00FE4B05 /* NewsView.swift in Sources */,
+				D1D0C02E2248600A00FE4B05 /* TopYouView.swift in Sources */,
 				D1E4242522278CB300201729 /* SPSectorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,43 @@
 //
 
 import UIKit
+import CardParts
 
-class SPYouViewController: UIViewController {
+class SPYouPieceViewController: CardsViewController {
+    fileprivate(set) var cards = [CardController]()
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    convenience init(cards: [CardController]){
+        self.init(nibName: nil, bundle: nil)
+        self.cards = cards
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if cards.count == 0 {
+            return
+        }
+        
+        self.collectionView.backgroundColor = .clear
+        self.collectionView.showsHorizontalScrollIndicator  = false
+        self.view.backgroundColor = .clear
+        self.collectionView.contentInset.bottom += 10
+        self.collectionView.contentInset.top = 18
+        
+        loadCards(cards: cards)
+    }
+}
 
+
+class SPYouViewController: CardsViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewController()
@@ -20,17 +54,6 @@ class SPYouViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.black
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension SPYouViewController: ViewControllerable {
