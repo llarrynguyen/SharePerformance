@@ -14,6 +14,7 @@ class YouHeaderBottomView: UIView {
     @IBOutlet weak var leftBottomLabel: UILabel!
     @IBOutlet weak var rightTopLabel: UILabel!
     @IBOutlet weak var rightBottomLabel: UILabel!
+    @IBOutlet weak var handleView: UIView!
     
     @IBOutlet var contentView: UIView!
     override init(frame: CGRect) {

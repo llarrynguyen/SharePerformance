@@ -108,6 +108,10 @@
 		D1E424C7222BECDE00201729 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AC222BECDD00201729 /* SF-Pro-Text-Light.otf */; };
 		D1E424C9222BECDE00201729 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */; };
 		D1EA670C2243A9C2007F9E35 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA670B2243A9C2007F9E35 /* SearchCollectionViewCell.swift */; };
+		D1F40766224B3941004500B2 /* FlexiblePageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40765224B3941004500B2 /* FlexiblePageControl.swift */; };
+		D1F4076A224B7662004500B2 /* UIAlertAction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40767224B7661004500B2 /* UIAlertAction+Extension.swift */; };
+		D1F4076B224B7662004500B2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40768224B7662004500B2 /* UIImage+Extension.swift */; };
+		D1F4076C224B7662004500B2 /* CustomizableAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F40769224B7662004500B2 /* CustomizableAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +244,10 @@
 		D1E424AE222BECDE00201729 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
 		D1EA670B2243A9C2007F9E35 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1F3212B2C6C62F0AEA564F4 /* Pods-StockPerformanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockPerformanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockPerformanceTests/Pods-StockPerformanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1F40765224B3941004500B2 /* FlexiblePageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexiblePageControl.swift; sourceTree = "<group>"; };
+		D1F40767224B7661004500B2 /* UIAlertAction+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+Extension.swift"; sourceTree = "<group>"; };
+		D1F40768224B7662004500B2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D1F40769224B7662004500B2 /* CustomizableAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableAlertController.swift; sourceTree = "<group>"; };
 		E108761FC0A7672036671C83 /* Pods-StockPerformanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockPerformanceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockPerformanceUITests/Pods-StockPerformanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,6 +345,7 @@
 		D1E423D22226739600201729 /* StockPerformance */ = {
 			isa = PBXGroup;
 			children = (
+				D1F40764224B38D8004500B2 /* Third-Party Code */,
 				D1D0BFFF2245139600FE4B05 /* CollectionViewLayout */,
 				D1EA670D2244FB20007F9E35 /* NavigationService */,
 				D1E42482222A20B900201729 /* ErrorHandler */,
@@ -598,6 +607,17 @@
 			path = NavigationService;
 			sourceTree = "<group>";
 		};
+		D1F40764224B38D8004500B2 /* Third-Party Code */ = {
+			isa = PBXGroup;
+			children = (
+				D1F40769224B7662004500B2 /* CustomizableAlertController.swift */,
+				D1F40767224B7661004500B2 /* UIAlertAction+Extension.swift */,
+				D1F40768224B7662004500B2 /* UIImage+Extension.swift */,
+				D1F40765224B3941004500B2 /* FlexiblePageControl.swift */,
+			);
+			path = "Third-Party Code";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -849,6 +869,7 @@
 			files = (
 				D1E4241022268D7300201729 /* SPConstants.swift in Sources */,
 				D1D0C00C2247595E00FE4B05 /* TwoStateCardView.swift in Sources */,
+				D1F4076C224B7662004500B2 /* CustomizableAlertController.swift in Sources */,
 				D1E4244F2227C01900201729 /* UITextView+Extensions.swift in Sources */,
 				D1D0BFFC22450F1200FE4B05 /* SimpleLableView.swift in Sources */,
 				D1E424332227BCC300201729 /* URL+Extensions.swift in Sources */,
@@ -861,6 +882,7 @@
 				D1E42496222BE81600201729 /* LayoutManager.swift in Sources */,
 				D1E424532227C17300201729 /* UIView+Extensions.swift in Sources */,
 				D1EA670C2243A9C2007F9E35 /* SearchCollectionViewCell.swift in Sources */,
+				D1F4076A224B7662004500B2 /* UIAlertAction+Extension.swift in Sources */,
 				D1E42486222A3C9300201729 /* CompanySearch.swift in Sources */,
 				D1E424082226748100201729 /* SPSectorViewController.swift in Sources */,
 				D1D0C008224749DD00FE4B05 /* SuperSimpleLableView.swift in Sources */,
@@ -878,6 +900,7 @@
 				D1E42477222907D300201729 /* NetworkManager.swift in Sources */,
 				D1D0C02B22485E6F00FE4B05 /* YouTopCollectionViewCell.swift in Sources */,
 				D1E4243B2227BE4E00201729 /* UIButton+Extensions.swift in Sources */,
+				D1F40766224B3941004500B2 /* FlexiblePageControl.swift in Sources */,
 				D1E424592227C23A00201729 /* UIActivity+Extensions.swift in Sources */,
 				D1E4241C22270C2600201729 /* Int +Extensions.swift in Sources */,
 				D1E424552227C1BB00201729 /* UIEdgeInsets+Extensions.swift in Sources */,
@@ -887,6 +910,7 @@
 				D1D0BFF922450E6300FE4B05 /* PortfoliaCollectionViewCell.swift in Sources */,
 				D1E4246B2227D87700201729 /* ParameterEncoding.swift in Sources */,
 				D1E4244B2227BFD900201729 /* UITableView+Extensions.swift in Sources */,
+				D1F4076B224B7662004500B2 /* UIImage+Extension.swift in Sources */,
 				D1E4248B222A7A5800201729 /* SPGlobals.swift in Sources */,
 				D1E424352227BD2D00201729 /* UserDefaults+Extension.swift in Sources */,
 				D1E424312227BC9500201729 /* NSAttributedString+Extensions.swift in Sources */,

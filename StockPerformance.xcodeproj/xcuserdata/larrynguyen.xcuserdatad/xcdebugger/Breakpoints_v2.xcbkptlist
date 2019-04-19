@@ -42,12 +42,12 @@
                   moduleName = "StockPerformance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/larrynguyen/Desktop/StockLite/StockPerformance/ViewModel/SPSearchViewModel.swift"
-                  timestampString = "575269739.185907"
+                  timestampString = "577361888.736637"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
                   endingLineNumber = "36"
-                  offsetFromSymbolStart = "31">
+                  offsetFromSymbolStart = "109">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -57,12 +57,12 @@
                   moduleName = "StockPerformance"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/larrynguyen/Desktop/StockLite/StockPerformance/ViewModel/SPSearchViewModel.swift"
-                  timestampString = "575269739.18793"
+                  timestampString = "577361888.7386481"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
                   endingLineNumber = "36"
-                  offsetFromSymbolStart = "41">
+                  offsetFromSymbolStart = "181">
                </Location>
             </Locations>
          </BreakpointContent>

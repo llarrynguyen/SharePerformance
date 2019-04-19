@@ -22,6 +22,9 @@ class TopYouView: UIView {
         return layout
     }()
     
+    private let topBarAnimation = CABasicAnimation(keyPath: "position")
+    private var stopBarAnimating = false
+    
     @IBOutlet weak var cellCollectionView: UICollectionView!
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -57,6 +60,26 @@ class TopYouView: UIView {
         self.cellCollectionView.contentInset.left = 1
         self.cellCollectionView.contentInset.right = 1
         
+        self.topBarAnimation.isAdditive = true
+        self.topBarAnimation.fromValue = NSValue(cgPoint: CGPoint(x: 0, y: -4.0))
+        self.topBarAnimation.toValue = NSValue(cgPoint: CGPoint(x: 0.0, y: 4.0))
+        self.topBarAnimation.autoreverses  = true
+        self.topBarAnimation.duration = 1.5
+        self.topBarAnimation.repeatCount = Float.infinity
+        
+    }
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if !stopBarAnimating {
+            bottomView.handleView.layer.add(topBarAnimation, forKey: "topBarAnimation")
+        }
+    }
+    
+    func pauseAnimation() {
+        bottomView.handleView.layer.removeAllAnimations()
+        stopBarAnimating = true
     }
 }
 
